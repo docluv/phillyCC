@@ -1,10 +1,13 @@
 (function () {
 
-    var campSchedule;
+    //initialize campSchedule as an array so the search will work in case it is empty ;)
+    var campSchedule = [];
 
     function initializeApp() {
 
         initFacetedSearch();
+
+        initSearch();
 
         ccSessions.getSessions()
             .then(function (sessions) {
@@ -53,6 +56,44 @@
 
         });
 
+
+    }
+
+    function initSearch() {
+
+        var searchBox = _d.qs(".search-query");
+
+        searchBox.addEventListener("keyup", function (evt) {
+
+            if (searchBox.value.length > 3) {
+
+                searchSessions(searchBox.value)
+                    .then(renderSearchResults);
+            }
+
+        });
+
+    }
+
+    function renderSearchResults(results){
+
+        console.log(results);
+
+    }
+
+    function searchSessions(term) {
+
+        return new Promise(function (resolve, reject) {
+
+            var results = campSchedule.filter(function (session) {
+
+                return (session.title.indexOf(term) > -1 || session.body.indexOf(term) > -1);
+
+            });
+
+            resolve(results);
+
+        });
 
     }
 
