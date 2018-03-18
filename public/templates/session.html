@@ -1,0 +1,7 @@
+<div class="session-detail">
+    <h1 class="session-title">{{title}}</h1>
+    <p class="session-text">{{speaker}} {{#badge}}
+        <span class="badge badge-primary">{{.}}</span>{{/badge}}</p>
+    <p class="session-text">{{time}} - {{#room}}{{.}}{{/room}}{{^room}}TBD{{/room}}</p>
+    {{{body}}}
+</div>

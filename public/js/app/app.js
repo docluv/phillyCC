@@ -1,13 +1,23 @@
 (function () {
 
     //initialize campSchedule as an array so the search will work in case it is empty ;)
-    var campSchedule = [];
+    var campSchedule = [],
+        filteredSessions = [],
+        sessionCardTemplate = "";
 
     function initializeApp() {
 
         initFacetedSearch();
 
         initSearch();
+
+        loadSessions();
+
+        loadSessionCardTemplate();
+
+    }
+
+    function loadSessions() {
 
         ccSessions.getSessions()
             .then(function (sessions) {
@@ -20,6 +30,8 @@
 
     }
 
+    /*faceted search */
+
     function initFacetedSearch() {
 
         var csBigChecks = _d.qsa(".big-check");
@@ -30,6 +42,14 @@
 
         }
 
+
+    }
+
+    function removeFilteredSessions(removeTime){
+
+    }
+
+    function addFilteredSessions(addTime){
 
     }
 
@@ -59,6 +79,7 @@
 
     }
 
+    /* search */
     function initSearch() {
 
         var searchBox = _d.qs(".search-query");
@@ -75,9 +96,11 @@
 
     }
 
-    function renderSearchResults(results){
+    function renderSearchResults(results) {
 
-        console.log(results);
+        var target = _d.qs(".page-content");
+
+        target.innerHTML = Mustache.render(sessionCardTemplate, { sessions: results });
 
     }
 
@@ -87,13 +110,36 @@
 
             var results = campSchedule.filter(function (session) {
 
-                return (session.title.indexOf(term) > -1 || session.body.indexOf(term) > -1);
+                return ((session.title.indexOf(term) > -1 || session.body.indexOf(term) > -1)
+                        && session.date.indexOf("2018-03-24") > -1);
 
             });
 
             resolve(results);
 
         });
+
+    }
+
+    /* session card template */
+
+    function loadSessionCardTemplate() {
+
+        fetch("templates/session-list-item.html")
+            .then(function (response) {
+
+                if (response.ok) {
+
+                    response.text()
+                        .then(function (template) {
+
+                            sessionCardTemplate = template;
+
+                        });
+
+                }
+
+            })
 
     }
 

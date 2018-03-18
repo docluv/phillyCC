@@ -1,7 +1,7 @@
 {
-    "name": "flappy_bird_pwa",
+    "name": "phillycc_pwa",
     "version": "0.0.1",
-    "description": "Hextris PWA",
+    "description": "Philly Code Camp PWA",
     "main": "bin/build.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,6 +10,7 @@
     "author": "Chris Love",
     "private": true,
     "devDependencies": {
-        "http-server": "*"
+        "http-server": "*",
+        "mustache": "*"
     }
 }

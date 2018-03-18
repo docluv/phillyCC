@@ -1,0 +1,10 @@
+{{#sessions}}
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <p class="card-text">{{speaker}} {{#badge}}<span class="badge badge-primary">{{.}}</span>{{/badge}}</p>
+        <p class="card-text">{{time}} - {{#room}}{{.}}{{/room}}{{^room}}TBD{{/room}}</p>
+        <a href="session/{{slug}}/" class="card-link">Details</a>
+    </div>
+</div>
+{{/sessions}}

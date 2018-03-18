@@ -1,10 +1,13 @@
 const fs = require("fs"),
     path = require("path"),
+    mustache = require("mustache"),
     utf8 = "utf-8";
 
 
 //read content/article
-let sessions = fs.readFileSync(path.resolve("../data/philly-cc-schedule.json"), utf8);
+let sessions = fs.readFileSync(path.resolve("../data/philly-cc-schedule.json"), utf8),
+    appShell = fs.readFileSync(path.resolve("../public/html/app-shell.html"), utf8),
+    sessionTemplate = fs.readFileSync(path.resolve("../public/templates/session.html"), utf8);
 
 sessions = JSON.parse(sessions);
 
@@ -16,50 +19,73 @@ let _sessions = [],
     _sessions1330 = [],
     _sessions1500 = [];
 
+function renderSession(session) {
+
+    let sessionShell = appShell.replace("<%template%>", sessionTemplate),
+        html = mustache.render(sessionShell, session),
+        folder = path.resolve("../public/session/" + session.slug),
+        stats = fs.lstatSync(folder);
+
+    if (!fs.existsSync(folder)) {
+
+        fs.mkdirSync(folder);
+
+    }
+
+    fs.writeFileSync(path.resolve("../public/session/" + session.slug + "/index.html"), html, utf8);
+
+}
+
 sessions.forEach((session) => {
 
-    fs.writeFileSync(path.resolve("../data/sessions/" + session.id + ".json"), JSON.stringify(session), utf8);
+    if (session.date.indexOf("2018-03-24") > -1) {
 
-    switch (session.time) {
+        fs.writeFileSync(path.resolve("../data/sessions/" + session.id + ".json"), JSON.stringify(session), utf8);
 
-        case "08:30":
+        switch (session.time) {
 
-            _sessions830.push(session);
+            case "08:30":
 
-            break;
+                _sessions830.push(session);
 
-        case "10:00":
+                break;
 
-            _sessions1000.push(session);
+            case "10:00":
 
-            break;
+                _sessions1000.push(session);
 
-        case "11:30":
+                break;
 
-            _sessions1130.push(session);
+            case "11:30":
 
-            break;
+                _sessions1130.push(session);
 
-        case "12:00":
+                break;
 
-            _sessions1200.push(session);
+            case "12:00":
 
-            break;
+                _sessions1200.push(session);
 
-        case "13:30":
+                break;
 
-            _sessions1330.push(session);
+            case "13:30":
 
-            break;
+                _sessions1330.push(session);
 
-        case "15:30":
+                break;
 
-            _sessions1500.push(session);
+            case "15:30":
 
-            break;
+                _sessions1500.push(session);
 
-        default:
-            break;
+                break;
+
+            default:
+                break;
+        }
+
+        renderSession(session);
+
     }
 
 });
