@@ -1,9 +1,11 @@
-(function () {
+
+
+var ccSessions = (function () {
 
     var sessionTimesKey = "session-times",
         savesSessions = "save-sessions";
 
-    window.ccSessions = {
+    var ccSessions = {
 
         campSchedule: [],
 
@@ -98,11 +100,13 @@
 
             var self = this;
 
+            term = term.toLowerCase();
+
             return new Promise(function (resolve, reject) {
 
                 var results = self.campSchedule.filter(function (session) {
 
-                    return ((session.title.indexOf(term) > -1 || session.body.indexOf(term) > -1)
+                    return ((session.title.toLowerCase().indexOf(term) > -1 || session.body.toLowerCase().indexOf(term) > -1)
                         && session.date.indexOf("2018-03-24") > -1);
 
                 });
@@ -207,5 +211,7 @@
         }
 
     }
+
+    return ccSessions;
 
 })();
