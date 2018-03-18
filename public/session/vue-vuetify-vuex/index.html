@@ -45,7 +45,7 @@
     <link href="humans.txt" rel="author">
 </head>
 
-<body class="menu-toggle">
+<body>
 
     <div class="navbar navbar-expand-lg navbar-light bg-light fixed-top " role="navigation">
         <div class="navbar-header">
@@ -63,9 +63,10 @@
     <div class="page-content">
         <div class="session-detail">
     <h1 class="session-title">Vue + Vuetify + Vuex</h1>
-    <p class="session-text">Bill Wolff 
+    <p class="session-text"><b>Bill Wolff</b> 
         <span class="badge badge-primary">MVP</span></p>
-    <p class="session-text">08:30 - MPR I</p>
+    <p class="session-text"><b>08:30 - MPR I</b>
+    <button class="btn btn-primary float-right">X</button></p>
     <p>Vue is gaining a lot of buzz as a worthy alternative to React and Angular in the JavaScript UI framework market. Come see how this fast and lightweight competitor simplifies SPA development chores. Vuetify is a popular implementation of Material Design principles that seamlessly snaps into a Vue app for a modern responsive look and feel. Vuex provides store and state management using Flux architecture patterns.</p>
 
 </div>
@@ -89,8 +90,8 @@
             <div class="facet">
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb830">
-                        <label for="cb830" value="8:30" class="big-check">8:30</label>
+                        <input type="checkbox" name="cb0830">
+                        <label for="cb0830" value="08:30" class="big-check">8:30</label>
                     </div>
                 </div>
                 <div class="row">
@@ -113,20 +114,22 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb130">
-                        <label for="cb130" value="13:30" class="big-check">1:30</label>
+                        <input type="checkbox" name="cb1330">
+                        <label for="cb1330" value="13:30" class="big-check">1:30</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb300">
-                        <label for="cb300" value="15:00" class="big-check">3:00</label>
+                        <input type="checkbox" name="cb1500">
+                        <label for="cb1500" value="15:00" class="big-check">3:00</label>
                     </div>
                 </div>
             </div>
+            <div class="row flex-center">
+                <button class="btn btn-light btn-my-sessions">My Sessions</button>
+            </div>
         </div>
     </aside>
-
 
     <script type="script-polyfil" id="polyfilassign" src="js/libs/polyfils/object.assign.js"></script>
     <script type="script-polyfil" id="polyfilpromise" src="js/libs/polyfils/es6-promise.min.js"></script>
@@ -172,7 +175,6 @@
     <script src="js/app/sessions.js"></script>
     <script src="js/app/ui/session-filter.js"></script>
     <script src="js/app/app.js"></script>
-
 
 </body>
 

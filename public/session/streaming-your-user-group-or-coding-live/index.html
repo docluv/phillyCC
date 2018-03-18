@@ -45,7 +45,7 @@
     <link href="humans.txt" rel="author">
 </head>
 
-<body class="menu-toggle">
+<body>
 
     <div class="navbar navbar-expand-lg navbar-light bg-light fixed-top " role="navigation">
         <div class="navbar-header">
@@ -63,9 +63,10 @@
     <div class="page-content">
         <div class="session-detail">
     <h1 class="session-title">Streaming Your User Group or Coding Live</h1>
-    <p class="session-text">Chris Gomez 
+    <p class="session-text"><b>Chris Gomez</b> 
         <span class="badge badge-primary">MVP</span></p>
-    <p class="session-text">13:30 - Malvern</p>
+    <p class="session-text"><b>13:30 - Malvern</b>
+    <button class="btn btn-primary float-right">X</button></p>
     <p>Video streaming took off when video gamers started plying their craft, with platforms dedicated to low latency, high quality video on demand and live.</p>
 <p>This format is perfect to extend the reach of user groups and meetups beyond those who attend in person. Philly.NET and Philly Azure are streaming every event in 2018. And live streaming your work on the desktop at home is a convenient way to get feedback and &#8220;pair program&#8221; with the world.</p>
 <p>In this session, Chris Gomez and Rich Ross will tell you how they got started streaming Philly.NET and Philly Azure events. The stream improves each month with new features being added.</p>
@@ -93,8 +94,8 @@
             <div class="facet">
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb830">
-                        <label for="cb830" value="8:30" class="big-check">8:30</label>
+                        <input type="checkbox" name="cb0830">
+                        <label for="cb0830" value="08:30" class="big-check">8:30</label>
                     </div>
                 </div>
                 <div class="row">
@@ -117,20 +118,22 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb130">
-                        <label for="cb130" value="13:30" class="big-check">1:30</label>
+                        <input type="checkbox" name="cb1330">
+                        <label for="cb1330" value="13:30" class="big-check">1:30</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb300">
-                        <label for="cb300" value="15:00" class="big-check">3:00</label>
+                        <input type="checkbox" name="cb1500">
+                        <label for="cb1500" value="15:00" class="big-check">3:00</label>
                     </div>
                 </div>
             </div>
+            <div class="row flex-center">
+                <button class="btn btn-light btn-my-sessions">My Sessions</button>
+            </div>
         </div>
     </aside>
-
 
     <script type="script-polyfil" id="polyfilassign" src="js/libs/polyfils/object.assign.js"></script>
     <script type="script-polyfil" id="polyfilpromise" src="js/libs/polyfils/es6-promise.min.js"></script>
@@ -176,7 +179,6 @@
     <script src="js/app/sessions.js"></script>
     <script src="js/app/ui/session-filter.js"></script>
     <script src="js/app/app.js"></script>
-
 
 </body>
 

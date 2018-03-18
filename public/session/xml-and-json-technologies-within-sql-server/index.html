@@ -45,7 +45,7 @@
     <link href="humans.txt" rel="author">
 </head>
 
-<body class="menu-toggle">
+<body>
 
     <div class="navbar navbar-expand-lg navbar-light bg-light fixed-top " role="navigation">
         <div class="navbar-header">
@@ -63,8 +63,9 @@
     <div class="page-content">
         <div class="session-detail">
     <h1 class="session-title">XML and JSON technologies within SQL Server</h1>
-    <p class="session-text">Alex Grinberg </p>
-    <p class="session-text">13:30 - Berwyn</p>
+    <p class="session-text"><b>Alex Grinberg</b> </p>
+    <p class="session-text"><b>13:30 - Berwyn</b>
+    <button class="btn btn-primary float-right">X</button></p>
     <p>This session explains internal SQL Server XML processes and demonstrates how XML shredding could help to solve issues, speed up daily performance monitoring and detect problems. The difference between XML and JSON will be demonstrated, with an in-depth look at the SQL Server &#8211; JSON integration. During the session, the audience will be provided with plenty of code examples. As a bonus, a lucky winner will receive my most recent book, &#8220;XML and JSON Recipes for SQL Server&#8221;.</p>
 
 </div>
@@ -88,8 +89,8 @@
             <div class="facet">
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb830">
-                        <label for="cb830" value="8:30" class="big-check">8:30</label>
+                        <input type="checkbox" name="cb0830">
+                        <label for="cb0830" value="08:30" class="big-check">8:30</label>
                     </div>
                 </div>
                 <div class="row">
@@ -112,20 +113,22 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb130">
-                        <label for="cb130" value="13:30" class="big-check">1:30</label>
+                        <input type="checkbox" name="cb1330">
+                        <label for="cb1330" value="13:30" class="big-check">1:30</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb300">
-                        <label for="cb300" value="15:00" class="big-check">3:00</label>
+                        <input type="checkbox" name="cb1500">
+                        <label for="cb1500" value="15:00" class="big-check">3:00</label>
                     </div>
                 </div>
             </div>
+            <div class="row flex-center">
+                <button class="btn btn-light btn-my-sessions">My Sessions</button>
+            </div>
         </div>
     </aside>
-
 
     <script type="script-polyfil" id="polyfilassign" src="js/libs/polyfils/object.assign.js"></script>
     <script type="script-polyfil" id="polyfilpromise" src="js/libs/polyfils/es6-promise.min.js"></script>
@@ -171,7 +174,6 @@
     <script src="js/app/sessions.js"></script>
     <script src="js/app/ui/session-filter.js"></script>
     <script src="js/app/app.js"></script>
-
 
 </body>
 

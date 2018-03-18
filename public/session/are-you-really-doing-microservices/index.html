@@ -45,7 +45,7 @@
     <link href="humans.txt" rel="author">
 </head>
 
-<body class="menu-toggle">
+<body>
 
     <div class="navbar navbar-expand-lg navbar-light bg-light fixed-top " role="navigation">
         <div class="navbar-header">
@@ -63,8 +63,9 @@
     <div class="page-content">
         <div class="session-detail">
     <h1 class="session-title">Are you really doing microservices?</h1>
-    <p class="session-text">Mike Yeager </p>
-    <p class="session-text">08:30 - 30th Street</p>
+    <p class="session-text"><b>Mike Yeager</b> </p>
+    <p class="session-text"><b>08:30 - 30th Street</b>
+    <button class="btn btn-primary float-right">X</button></p>
     <p>Microservices aren&#8217;t small services. A microservice architecture is a very different approach to building applications. If you&#8217;ve done web services or WCF services or Web API REST services then you know what services are and you&#8217;re ready to take the next step and see how large applications are designed in a manageable way with a microservices architecture. Examples will be shown using Azure SQL Database, Cosmos DB, .NET Core, Azure functions and a variety of UIs. Come ready to see application development in a cool new way.</p>
 
 </div>
@@ -88,8 +89,8 @@
             <div class="facet">
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb830">
-                        <label for="cb830" value="8:30" class="big-check">8:30</label>
+                        <input type="checkbox" name="cb0830">
+                        <label for="cb0830" value="08:30" class="big-check">8:30</label>
                     </div>
                 </div>
                 <div class="row">
@@ -112,20 +113,22 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb130">
-                        <label for="cb130" value="13:30" class="big-check">1:30</label>
+                        <input type="checkbox" name="cb1330">
+                        <label for="cb1330" value="13:30" class="big-check">1:30</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb300">
-                        <label for="cb300" value="15:00" class="big-check">3:00</label>
+                        <input type="checkbox" name="cb1500">
+                        <label for="cb1500" value="15:00" class="big-check">3:00</label>
                     </div>
                 </div>
             </div>
+            <div class="row flex-center">
+                <button class="btn btn-light btn-my-sessions">My Sessions</button>
+            </div>
         </div>
     </aside>
-
 
     <script type="script-polyfil" id="polyfilassign" src="js/libs/polyfils/object.assign.js"></script>
     <script type="script-polyfil" id="polyfilpromise" src="js/libs/polyfils/es6-promise.min.js"></script>
@@ -171,7 +174,6 @@
     <script src="js/app/sessions.js"></script>
     <script src="js/app/ui/session-filter.js"></script>
     <script src="js/app/app.js"></script>
-
 
 </body>
 

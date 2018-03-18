@@ -45,7 +45,7 @@
     <link href="humans.txt" rel="author">
 </head>
 
-<body class="menu-toggle">
+<body>
 
     <div class="navbar navbar-expand-lg navbar-light bg-light fixed-top " role="navigation">
         <div class="navbar-header">
@@ -63,8 +63,9 @@
     <div class="page-content">
         <div class="session-detail">
     <h1 class="session-title">Megahertz, Gigahertz, Registers and Instructions: How does a CPU actually work?</h1>
-    <p class="session-text">Kendall Miller </p>
-    <p class="session-text">13:30 - Strafford</p>
+    <p class="session-text"><b>Kendall Miller</b> </p>
+    <p class="session-text"><b>13:30 - Strafford</b>
+    <button class="btn btn-primary float-right">X</button></p>
     <p>For decades, we�ve been creating ever higher abstractions between ourselves and the computing hardware we�re programming, but in the end whether you�re writing JavaScript, Haskell, or Python it all comes down to 1�s and 0�s running through hardware patterns that were well understood twenty years ago.</p>
 <p>We�ll walk through the fundamentals of how CPU�s �think� in an accessible way (no engineering degree required!) so you can appreciate the marvel that is the modern CPU be it in a server data center or your fridge at home. You�ll learn how a CPU turns the code we feed it into actions, what�s the big difference between an ARM and an Intel processor, how CPU�s constantly optimize work for us, and where is it all going for the next few years.</p>
 <p>Finally, we&#8217;ll show how Meltdown and Spectre take advantage of CPU internals to expose data and why this class of security problems are going to be a challenge to the next generation of CPU&#8217;s.</p>
@@ -90,8 +91,8 @@
             <div class="facet">
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb830">
-                        <label for="cb830" value="8:30" class="big-check">8:30</label>
+                        <input type="checkbox" name="cb0830">
+                        <label for="cb0830" value="08:30" class="big-check">8:30</label>
                     </div>
                 </div>
                 <div class="row">
@@ -114,20 +115,22 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb130">
-                        <label for="cb130" value="13:30" class="big-check">1:30</label>
+                        <input type="checkbox" name="cb1330">
+                        <label for="cb1330" value="13:30" class="big-check">1:30</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb300">
-                        <label for="cb300" value="15:00" class="big-check">3:00</label>
+                        <input type="checkbox" name="cb1500">
+                        <label for="cb1500" value="15:00" class="big-check">3:00</label>
                     </div>
                 </div>
             </div>
+            <div class="row flex-center">
+                <button class="btn btn-light btn-my-sessions">My Sessions</button>
+            </div>
         </div>
     </aside>
-
 
     <script type="script-polyfil" id="polyfilassign" src="js/libs/polyfils/object.assign.js"></script>
     <script type="script-polyfil" id="polyfilpromise" src="js/libs/polyfils/es6-promise.min.js"></script>
@@ -173,7 +176,6 @@
     <script src="js/app/sessions.js"></script>
     <script src="js/app/ui/session-filter.js"></script>
     <script src="js/app/app.js"></script>
-
 
 </body>
 

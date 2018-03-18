@@ -45,7 +45,7 @@
     <link href="humans.txt" rel="author">
 </head>
 
-<body class="menu-toggle">
+<body>
 
     <div class="navbar navbar-expand-lg navbar-light bg-light fixed-top " role="navigation">
         <div class="navbar-header">
@@ -63,9 +63,10 @@
     <div class="page-content">
         <div class="session-detail">
     <h1 class="session-title">TypeScript: JavaScript Evolved</h1>
-    <p class="session-text">Jess Chadwick 
+    <p class="session-text"><b>Jess Chadwick</b> 
         <span class="badge badge-primary">MVP</span></p>
-    <p class="session-text">10:00 - MPR II</p>
+    <p class="session-text"><b>10:00 - MPR II</b>
+    <button class="btn btn-primary float-right">X</button></p>
     <p>JavaScript is in your browser, your freezer and everywhere in between. Though it&#8217;s true that today&#8217;s world runs on JavaScript, the language was created with form validation and basic DOM manipulation in mind so it leaves a lot to be desired when it comes to writing real-world applications with it. So much so that Douglas Crockford felt the need to write a book entitled, &#8220;JavaScript the Good Parts&#8221; and Anders Hejlsberg, the father of C#, decided to focus his decades of language development expertise into bringing JavaScript into the world of mature, respectable languages by creating TypeScript.</p>
 <p>In this presentation I&#8217;ll show just what TypeScript is, how it relates to the concepts you already know today, and why you would might consider writing all your web applications in TypeScript rather than plain old JavaScript from now on.</p>
 
@@ -90,8 +91,8 @@
             <div class="facet">
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb830">
-                        <label for="cb830" value="8:30" class="big-check">8:30</label>
+                        <input type="checkbox" name="cb0830">
+                        <label for="cb0830" value="08:30" class="big-check">8:30</label>
                     </div>
                 </div>
                 <div class="row">
@@ -114,20 +115,22 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb130">
-                        <label for="cb130" value="13:30" class="big-check">1:30</label>
+                        <input type="checkbox" name="cb1330">
+                        <label for="cb1330" value="13:30" class="big-check">1:30</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb300">
-                        <label for="cb300" value="15:00" class="big-check">3:00</label>
+                        <input type="checkbox" name="cb1500">
+                        <label for="cb1500" value="15:00" class="big-check">3:00</label>
                     </div>
                 </div>
             </div>
+            <div class="row flex-center">
+                <button class="btn btn-light btn-my-sessions">My Sessions</button>
+            </div>
         </div>
     </aside>
-
 
     <script type="script-polyfil" id="polyfilassign" src="js/libs/polyfils/object.assign.js"></script>
     <script type="script-polyfil" id="polyfilpromise" src="js/libs/polyfils/es6-promise.min.js"></script>
@@ -173,7 +176,6 @@
     <script src="js/app/sessions.js"></script>
     <script src="js/app/ui/session-filter.js"></script>
     <script src="js/app/app.js"></script>
-
 
 </body>
 

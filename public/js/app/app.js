@@ -1,8 +1,9 @@
+"use strict"; //https://love2dev.com/blog/javascript-strict-mode/
+
 (function () {
 
     //initialize campSchedule as an array so the search will work in case it is empty ;)
-    var campSchedule = [],
-        filteredSessions = [],
+    var filteredSessions = [],
         sessionCardTemplate = "";
 
     function initializeApp() {
@@ -11,20 +12,95 @@
 
         initSearch();
 
-        loadSessions();
+        ccSessions.getSessions()
+            .then(function () {
 
-        loadSessionCardTemplate();
+                loadSessionCardTemplate();
+
+                initMenuToggle();
+
+                if (location.pathname === "/") {
+
+                    loadSessions();
+
+                }
+
+            });
+
+    }
+
+    // Menu toggle
+    function initMenuToggle() {
+
+        var toggler = _d.qs(".navbar-toggler");
+
+        toggler.addEventListener("click", function (evt) {
+
+            toggleMenu();
+
+        });
+
+    }
+
+    function toggleMenu() {
+
+        if (document.body.clientWidth < 992) {
+
+            document.body.classList.toggle("menu-toggle");
+
+        }
+
+    }
+
+    //normally I would push this to a controller, but this is a simple, simple app....
+    function renderHomeSessions(campSchedule) {
+
+        //check IDB for what times the user last looked for
+
+        //render all sessions by default
+        renderSearchResults(campSchedule);
+
+    }
+
+    function initMySessions() {
+
+        var btnMySessions = _d.qs(".btn-my-session");
+
+        btnMySessions.addEventListener("click", function () {
+
+            renderSelectedSessions();
+
+        });
+
+    }
+
+    function renderSelectedSessions(savedSessions) {
+
+        renderSearchResults(savedSessions);
+
+    }
+
+    function renderFullSchedule() {
+
+        ccSessions.getFacetedSessions()
+            .then(renderHomeSessions);
 
     }
 
     function loadSessions() {
 
-        ccSessions.getSessions()
-            .then(function (sessions) {
+        ccSessions.getSavedSessions()
+            .then(function (savedSessions) {
 
-                console.log(sessions);
+                if (savedSessions) {
 
-                campSchedule = sessions;
+                    renderSelectedSessions(savedSessions);
+
+                } else {
+
+                    renderFullSchedule();
+
+                }
 
             });
 
@@ -42,14 +118,18 @@
 
         }
 
+        ccSessions.getSelectedTimes()
+            .then(function (times) {
 
-    }
+                times.forEach(function (sessionTime) {
 
-    function removeFilteredSessions(removeTime){
+                    var sessionCB = _d.qs("[name=cb" + sessionTime.replace(":", "") + "]");
 
-    }
+                    sessionCB.checked = true;
 
-    function addFilteredSessions(addTime){
+                });
+
+            });
 
     }
 
@@ -60,22 +140,30 @@
             e.preventDefault();
 
             var cbFor = e.target.getAttribute("for"),
+                value = e.target.getAttribute("value"),
                 cb = _d.qs("[name='" + cbFor + "']");
 
-            if (cb.checked) {
+            if (cb) {
 
-                cb.checked = false;
-                //push to session time filter
+                if (cb.checked) {
 
-            } else {
+                    cb.checked = false;
+                    //push to session time filter
+                    ccSessions.removeSessionTime(value)
+                        .then(renderFullSchedule);
 
-                cb.checked = true;
-                //pop from session time filter
+                } else {
+
+                    cb.checked = true;
+                    //pop from session time filter
+                    ccSessions.addSessionTime(value)
+                        .then(renderFullSchedule);
+
+                }
 
             }
 
         });
-
 
     }
 
@@ -88,7 +176,7 @@
 
             if (searchBox.value.length > 3) {
 
-                searchSessions(searchBox.value)
+                ccSessions.searchSessions(searchBox.value)
                     .then(renderSearchResults);
             }
 
@@ -101,23 +189,6 @@
         var target = _d.qs(".page-content");
 
         target.innerHTML = Mustache.render(sessionCardTemplate, { sessions: results });
-
-    }
-
-    function searchSessions(term) {
-
-        return new Promise(function (resolve, reject) {
-
-            var results = campSchedule.filter(function (session) {
-
-                return ((session.title.indexOf(term) > -1 || session.body.indexOf(term) > -1)
-                        && session.date.indexOf("2018-03-24") > -1);
-
-            });
-
-            resolve(results);
-
-        });
 
     }
 

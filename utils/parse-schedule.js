@@ -36,57 +36,80 @@ function renderSession(session) {
 
 }
 
+
+sessions = sessions.filter(function (session) {
+
+    return (session.date.indexOf("2018-03-24") > -1);
+
+});
+
+
+sessions = sessions.sort(function (a, b) {
+
+    var timeA = a.time.replace(":", ""),
+        timeB = b.time.replace(":", "");
+
+    if (timeA < timeB) {
+        return -1;
+    }
+    if (timeA > timeB) {
+        return 1;
+    }
+
+    // names must be equal
+    return 0;
+
+});
+
+
 sessions.forEach((session) => {
 
-    if (session.date.indexOf("2018-03-24") > -1) {
+    fs.writeFileSync(path.resolve("../data/sessions/" + session.id + ".json"), JSON.stringify(session), utf8);
 
-        fs.writeFileSync(path.resolve("../data/sessions/" + session.id + ".json"), JSON.stringify(session), utf8);
+    //https://love2dev.com/blog/javascript-switch-statement/
+    switch (session.time) {
 
-        switch (session.time) {
+        case "08:30":
 
-            case "08:30":
+            _sessions830.push(session);
 
-                _sessions830.push(session);
+            break;
 
-                break;
+        case "10:00":
 
-            case "10:00":
+            _sessions1000.push(session);
 
-                _sessions1000.push(session);
+            break;
 
-                break;
+        case "11:30":
 
-            case "11:30":
+            _sessions1130.push(session);
 
-                _sessions1130.push(session);
+            break;
 
-                break;
+        case "12:00":
 
-            case "12:00":
+            _sessions1200.push(session);
 
-                _sessions1200.push(session);
+            break;
 
-                break;
+        case "13:30":
 
-            case "13:30":
+            _sessions1330.push(session);
 
-                _sessions1330.push(session);
+            break;
 
-                break;
+        case "15:30":
 
-            case "15:30":
+            _sessions1500.push(session);
 
-                _sessions1500.push(session);
+            break;
 
-                break;
-
-            default:
-                break;
-        }
-
-        renderSession(session);
-
+        default:
+            break;
     }
+
+    renderSession(session);
 
 });
 
@@ -96,3 +119,5 @@ fs.writeFileSync(path.resolve("../public/api/1130.json"), JSON.stringify(_sessio
 fs.writeFileSync(path.resolve("../public/api/1200.json"), JSON.stringify(_sessions1200), utf8);
 fs.writeFileSync(path.resolve("../public/api/1330.json"), JSON.stringify(_sessions1330), utf8);
 fs.writeFileSync(path.resolve("../public/api/1500.json"), JSON.stringify(_sessions1500), utf8);
+
+fs.writeFileSync(path.resolve("../public/api/philly-cc-schedule.json"), JSON.stringify(sessions), utf8);

@@ -1,4 +1,15 @@
-
+body {
+    font-family: /* 1 */
+    -apple-system, BlinkMacSystemFont, /* 2 */
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", /* 3 */
+    "Helvetica Neue", sans-serif;
+    font-size: 16pt;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    min-height: 100%;
+  }
+  
 
 .page-content{
     position: relative;
@@ -7,15 +18,88 @@
     display: flex;
     flex-flow: wrap;
     padding: 1%;
+    top: 100px;
 }
 
 .page-content .card{
-    width: 30%;
+    width: 96%;
     margin: 1.5%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
+.page-content .card-title {
+    min-height: 3.25em;
+}
 
+.session-detail{
+    padding: 2%;
+}
+
+.session-title {
+    font-size: 1.25em;
+    border-bottom: #005c84 1px solid;
+    padding-bottom: 6px;
+}
+
+.full-size{
+    width: calc(100vw - 320px);
+    height: 100vh;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+/* loader */
+
+
+.loader {
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
 
 
 /* Begin Navigation Side Bar */
@@ -31,6 +115,7 @@
     top: 100px;
     bottom: 0;
     padding-top: 6%;
+    overflow-y: scroll;
   }
 
   .navigation-panel a {
@@ -55,12 +140,16 @@
     transform: translateX(0);
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 992px) {
 
     .page-content{
-        top: 100px;
         margin-left:320px;
     }
+
+    .session-detail{
+        padding: 1%;
+    }
+    
 
     .navigation-panel {
       position: fixed;
@@ -70,6 +159,11 @@
       padding-top: 1%;
 
     }
+
+    .page-content .card{
+        width: 30%;
+    }
+
   }
   
 

@@ -45,7 +45,7 @@
     <link href="humans.txt" rel="author">
 </head>
 
-<body class="menu-toggle">
+<body>
 
     <div class="navbar navbar-expand-lg navbar-light bg-light fixed-top " role="navigation">
         <div class="navbar-header">
@@ -63,8 +63,9 @@
     <div class="page-content">
         <div class="session-detail">
     <h1 class="session-title">Facial Recognition in dotNet &amp;#8211; Face Registry Application</h1>
-    <p class="session-text">Marcus Kern </p>
-    <p class="session-text">15:00 - Berwyn</p>
+    <p class="session-text"><b>Marcus Kern</b> </p>
+    <p class="session-text"><b>15:00 - Berwyn</b>
+    <button class="btn btn-primary float-right">X</button></p>
     <p>Add Facial recognition to (*any) dotNet App (including Asp.NET MVC)<br />
 I walk you through the concepts and processes required to &#8220;Register&#8221; People into Microsoft&#8217;s Azure Cognitive Services Face API. </p>
 <p>By the end of the session we will have a working Classic Forms (UWP app is currently in development) application with a website interface for processing.<br />
@@ -93,8 +94,8 @@ we develop a client library for use in many application types including ASP.NET 
             <div class="facet">
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb830">
-                        <label for="cb830" value="8:30" class="big-check">8:30</label>
+                        <input type="checkbox" name="cb0830">
+                        <label for="cb0830" value="08:30" class="big-check">8:30</label>
                     </div>
                 </div>
                 <div class="row">
@@ -117,20 +118,22 @@ we develop a client library for use in many application types including ASP.NET 
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb130">
-                        <label for="cb130" value="13:30" class="big-check">1:30</label>
+                        <input type="checkbox" name="cb1330">
+                        <label for="cb1330" value="13:30" class="big-check">1:30</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb300">
-                        <label for="cb300" value="15:00" class="big-check">3:00</label>
+                        <input type="checkbox" name="cb1500">
+                        <label for="cb1500" value="15:00" class="big-check">3:00</label>
                     </div>
                 </div>
             </div>
+            <div class="row flex-center">
+                <button class="btn btn-light btn-my-sessions">My Sessions</button>
+            </div>
         </div>
     </aside>
-
 
     <script type="script-polyfil" id="polyfilassign" src="js/libs/polyfils/object.assign.js"></script>
     <script type="script-polyfil" id="polyfilpromise" src="js/libs/polyfils/es6-promise.min.js"></script>
@@ -176,7 +179,6 @@ we develop a client library for use in many application types including ASP.NET 
     <script src="js/app/sessions.js"></script>
     <script src="js/app/ui/session-filter.js"></script>
     <script src="js/app/app.js"></script>
-
 
 </body>
 

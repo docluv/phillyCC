@@ -45,7 +45,7 @@
     <link href="humans.txt" rel="author">
 </head>
 
-<body class="menu-toggle">
+<body>
 
     <div class="navbar navbar-expand-lg navbar-light bg-light fixed-top " role="navigation">
         <div class="navbar-header">
@@ -63,8 +63,9 @@
     <div class="page-content">
         <div class="session-detail">
     <h1 class="session-title">Fable: Grappling the JavaScript Ecosystem with F#</h1>
-    <p class="session-text">Stachu Korick </p>
-    <p class="session-text">08:30 - Malvern</p>
+    <p class="session-text"><b>Stachu Korick</b> </p>
+    <p class="session-text"><b>08:30 - Malvern</b>
+    <button class="btn btn-primary float-right">X</button></p>
     <p>You can do *anything* with JavaScript, from web applications to artificial intelligence.<br />
 That said, not all of us love working in a weakly-typed dynamic language.</p>
 <p>Fable is a free and open-source tool that can solve not only these pains but further fulfill the desire to write full-stack web and mobile applications in a single language while sharing code across platforms.</p>
@@ -91,8 +92,8 @@ That said, not all of us love working in a weakly-typed dynamic language.</p>
             <div class="facet">
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb830">
-                        <label for="cb830" value="8:30" class="big-check">8:30</label>
+                        <input type="checkbox" name="cb0830">
+                        <label for="cb0830" value="08:30" class="big-check">8:30</label>
                     </div>
                 </div>
                 <div class="row">
@@ -115,20 +116,22 @@ That said, not all of us love working in a weakly-typed dynamic language.</p>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb130">
-                        <label for="cb130" value="13:30" class="big-check">1:30</label>
+                        <input type="checkbox" name="cb1330">
+                        <label for="cb1330" value="13:30" class="big-check">1:30</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="checkbox" name="cb300">
-                        <label for="cb300" value="15:00" class="big-check">3:00</label>
+                        <input type="checkbox" name="cb1500">
+                        <label for="cb1500" value="15:00" class="big-check">3:00</label>
                     </div>
                 </div>
             </div>
+            <div class="row flex-center">
+                <button class="btn btn-light btn-my-sessions">My Sessions</button>
+            </div>
         </div>
     </aside>
-
 
     <script type="script-polyfil" id="polyfilassign" src="js/libs/polyfils/object.assign.js"></script>
     <script type="script-polyfil" id="polyfilpromise" src="js/libs/polyfils/es6-promise.min.js"></script>
@@ -174,7 +177,6 @@ That said, not all of us love working in a weakly-typed dynamic language.</p>
     <script src="js/app/sessions.js"></script>
     <script src="js/app/ui/session-filter.js"></script>
     <script src="js/app/app.js"></script>
-
 
 </body>
 

@@ -1,7 +1,8 @@
 <div class="session-detail">
     <h1 class="session-title">{{title}}</h1>
-    <p class="session-text">{{speaker}} {{#badge}}
+    <p class="session-text"><b>{{speaker}}</b> {{#badge}}
         <span class="badge badge-primary">{{.}}</span>{{/badge}}</p>
-    <p class="session-text">{{time}} - {{#room}}{{.}}{{/room}}{{^room}}TBD{{/room}}</p>
+    <p class="session-text"><b>{{time}} - {{#room}}{{.}}{{/room}}{{^room}}TBD{{/room}}</b>
+    <button class="btn btn-primary float-right">X</button></p>
     {{{body}}}
 </div>
