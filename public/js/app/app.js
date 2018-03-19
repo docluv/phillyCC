@@ -15,7 +15,10 @@
         ccSessions.getSessions()
             .then(function () {
 
-                loadSessionCardTemplate();
+                return loadSessionCardTemplate();
+
+            })
+            .then(function(){
 
                 initMenuToggle();
 
@@ -196,19 +199,22 @@
 
     function loadSessionCardTemplate() {
 
-        fetch("templates/session-list-item.html")
+        return fetch("templates/session-list-item.html")
             .then(function (response) {
 
                 if (response.ok) {
 
-                    response.text()
+                    return response.text()
                         .then(function (template) {
 
                             sessionCardTemplate = template;
 
+                            return;
                         });
 
                 }
+
+                return;
 
             })
 

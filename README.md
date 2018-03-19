@@ -6,4 +6,5 @@ Philly Code Camp Schedule PWA  ![Philly Code Camp](https://github.com/docluv/phi
 - [Server Side/Node Rendering Script]()
 - [The Search and Filtering Functionality]()
 - [The Service Worker & Offline Rendering]()
+- [Performance Optimization]()
 - [The AWS Infrastructure]()
