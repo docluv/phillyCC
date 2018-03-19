@@ -163,7 +163,7 @@ function getSessionBySlug(slug) {
 
 function getSlug(url) {
 
-    let slug = event.request.url.split("\/"),
+    let slug = url.split("\/"),
         index = slug.length - 1;
 
     if (slug[index] === "") {
