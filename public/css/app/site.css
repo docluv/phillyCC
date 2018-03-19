@@ -119,6 +119,10 @@ body {
 
 /* Begin Navigation Side Bar */
 
+.navigation-panel::-webkit-scrollbar {
+    display: none;
+    }
+
 .navigation-panel {
     background: #005c84;
     width: 100%;
@@ -129,6 +133,15 @@ body {
     top: 100px;
     bottom: 0;
     padding-top: 6%;
+    -webkit-overflow-style: none;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-style: none;
+    -moz-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    -ms-scroll-chaining: none;
+    -ms-scroll-translation: vertical-to-horizontal;
+    overflow: hidden;
     overflow-y: scroll;
 }
 

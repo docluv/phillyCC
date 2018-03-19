@@ -41,24 +41,6 @@ var ccSessions = (function () {
 
         },
 
-        getSession: function (id) {
-
-            return fetch("api/sessions/" + id + ".json")
-                .then(function (response) {
-
-                    if (response.ok) {
-
-                        return response.json();
-
-                    } else {
-
-                        throw "session fetch failed";
-                    }
-
-                });
-
-        },
-
         saveSession: function (session) {
 
             return getSavedSessions()
@@ -106,7 +88,9 @@ var ccSessions = (function () {
 
                 var results = self.campSchedule.filter(function (session) {
 
-                    return ((session.title.toLowerCase().indexOf(term) > -1 || session.body.toLowerCase().indexOf(term) > -1)
+                    return ((session.title.toLowerCase().indexOf(term) > -1 || 
+                        session.body.toLowerCase().indexOf(term) > -1 ||
+                        session.speaker.toLowerCase().indexOf(term) > -1)
                         && session.date.indexOf("2018-03-24") > -1);
 
                 });

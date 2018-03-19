@@ -46,22 +46,12 @@
     }
 
     function toggleMenu() {
-
+        /* Choose 992 because that is the break point where BS hides the menu toggle button */
         if (document.body.clientWidth < 992) {
 
             document.body.classList.toggle("menu-toggle");
 
         }
-
-    }
-
-    //normally I would push this to a controller, but this is a simple, simple app....
-    function renderHomeSessions(campSchedule) {
-
-        //check IDB for what times the user last looked for
-
-        //render all sessions by default
-        renderSearchResults(campSchedule);
 
     }
 
@@ -71,27 +61,23 @@
 
         btnMySessions.addEventListener("click", function () {
 
-            renderSelectedSessions();
+            ccSessions.getSavedSessions()
+                .then(renderSearchResults);
 
         });
-
-    }
-
-    function renderSelectedSessions(savedSessions) {
-
-        renderSearchResults(savedSessions);
 
     }
 
     function renderFullSchedule() {
 
         ccSessions.getFacetedSessions()
-            .then(renderHomeSessions);
+            .then(renderSearchResults);
 
     }
 
     function loadSessions() {
 
+        //attempt to load the user's schedule first, then the 'full' schedule
         ccSessions.getSavedSessions()
             .then(function (savedSessions) {
 
@@ -177,11 +163,15 @@
 
         searchBox.addEventListener("keyup", function (evt) {
 
-            if (searchBox.value.length > 3) {
+            evt.preventDefault();
+
+            if (searchBox.value.length > 3 || evt.keyCode === 13) {
 
                 ccSessions.searchSessions(searchBox.value)
                     .then(renderSearchResults);
             }
+
+            return false;
 
         });
 

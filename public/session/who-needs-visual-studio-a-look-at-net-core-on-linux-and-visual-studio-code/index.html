@@ -14,7 +14,7 @@
     <!-- Mobile Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="theme-color" content="#000066"/>
+    <meta name="theme-color" content="#000066" />
 
     <!-- Favicon -->
     <link href="favicon.png" rel="shortcut icon">
@@ -80,15 +80,13 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <form class="form-search form-horizontal">
-                        <div class="form-group">
-                            <input type="search" class="search-query" placeholder="Search">
-                            <button type="submit" class="btn">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </div>
-                    </form>
+                <div class="col-12 form-search form-horizontal">
+                    <div class="form-group">
+                        <input type="search" class="search-query" placeholder="Search">
+                        <button type="submit" class="btn">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="facet">
@@ -140,7 +138,6 @@
     <script type="script-polyfil" id="polyfilfetch" src="js/libs/polyfils/fetch.js"></script>
 
     <script>
-
         //wrap in IIFE to keep out of global scope
         (function () {
 

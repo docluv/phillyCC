@@ -5,7 +5,7 @@ self.importScripts("js/libs/localforage.min.js",
     "js/app/sessions.js"
 );
 
-const version = "1.0",
+const version = "1.01",
     preCache = "PRECACHE-" + version,
     dynamicCache = "DYNAMIC-" + version,
     cacheList = [
