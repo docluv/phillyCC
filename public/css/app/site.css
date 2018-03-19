@@ -8,10 +8,9 @@ body {
     color: #333;
     background-color: #fff;
     min-height: 100%;
-  }
-  
+}
 
-.page-content{
+.page-content {
     position: relative;
     align-content: left;
     justify-content: center;
@@ -21,7 +20,7 @@ body {
     top: 100px;
 }
 
-.page-content .card{
+.page-content .card {
     width: 96%;
     margin: 1.5%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -31,7 +30,7 @@ body {
     min-height: 3.25em;
 }
 
-.session-detail{
+.session-detail {
     padding: 2%;
 }
 
@@ -41,7 +40,7 @@ body {
     padding-bottom: 6px;
 }
 
-.full-size{
+.full-size {
     width: calc(100vw - 320px);
     height: 100vh;
 }
@@ -53,10 +52,7 @@ body {
     align-content: center;
 }
 
-
-
 /* loader */
-
 
 .loader {
     position: absolute;
@@ -69,41 +65,59 @@ body {
     height: 120px;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
-  }
-  
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  /* Add animation to "page content" */
-  .animate-bottom {
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Add animation to "page content" */
+
+.animate-bottom {
     position: relative;
     -webkit-animation-name: animatebottom;
     -webkit-animation-duration: 1s;
     animation-name: animatebottom;
     animation-duration: 1s
-  }
-  
-  @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
-  
+}
 
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
 
 /* Begin Navigation Side Bar */
-
 
 .navigation-panel {
     background: #005c84;
@@ -111,71 +125,68 @@ body {
     transform: translateX(-100%);
     transition: 500ms ease-in-out;
     color: #fefefe;
-    position: absolute;
+    position: fixed;
     top: 100px;
     bottom: 0;
     padding-top: 6%;
     overflow-y: scroll;
-  }
+}
 
-  .navigation-panel a {
+.navigation-panel a {
     color: #fefefe;
-  }
+}
 
-  .navigation-panel .main-nav-grid-item {
+.navigation-panel .main-nav-grid-item {
     font-size: 16pt;
     line-height: 48px;
     padding: 0 16px;
     display: block;
     height: 48px;
-  }
-  
-  .navigation-panel .main-nav-grid-item .fa {
+}
+
+.navigation-panel .main-nav-grid-item .fa {
     margin-right: 1rem;
-  }
+}
 
-
-  .menu-toggle .navigation-panel {
+.menu-toggle .navigation-panel {
     width: 320px;
     transform: translateX(0);
-  }
+}
 
-  @media (min-width: 992px) {
-
-    .page-content{
-        margin-left:320px;
+@media (min-width: 768px) {
+    .page-content .card {
+        width: 46%;
     }
+}
 
-    .session-detail{
+@media (min-width: 992px) {
+    .page-content {
+        margin-left: 320px;
+    }
+    .session-detail {
         padding: 1%;
     }
-    
-
     .navigation-panel {
-      position: fixed;
-      top: 100px;
-      width: 320px;
-      transform: translateX(0);
-      padding-top: 1%;
-
+        position: fixed;
+        top: 100px;
+        width: 320px;
+        transform: translateX(0);
+        padding-top: 1%;
     }
-
-    .page-content .card{
+    .page-content .card {
         width: 30%;
     }
-
-  }
-  
+}
 
 /* search */
 
 .form-search {
-    margin:0;
+    margin: 0;
     margin-top: 5px;
     padding: 0;
 }
 
-.form-search .form-group{
+.form-search .form-group {
     position: relative;
 }
 
@@ -205,12 +216,11 @@ body {
     border-radius: 3px;
 }
 
-.search-query:focus + button {
-    z-index: 3;   
+.search-query:focus+button {
+    z-index: 3;
 }
 
 /* checkbox */
-
 
 [type=checkbox]+label:before {
     content: '';
@@ -281,6 +291,5 @@ input[type=checkbox] {
     -ms-user-select: none;
     user-select: none;
 }
-
 
 /* End Navigation Side Bar */
