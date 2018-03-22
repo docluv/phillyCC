@@ -103,7 +103,7 @@ self.addEventListener("fetch", event => {
 
                         if (err.message === "Failed to fetch") {
 
-                            if (event.request.url.indexOf("session")) {
+                            if (event.request.url.indexOf("session") > -1) {
 
                                 return renderSession(event);
 
