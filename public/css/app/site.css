@@ -52,6 +52,24 @@ body {
     align-content: center;
 }
 
+.session-actions{
+    height: 40px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.session-actions [type=radio]+label, 
+.session-actions [type=checkbox]+label{
+    font-size: 1em;
+}
+
+.session-actions [type=checkbox]+label:before{
+    border-color: #005c84;
+}
+
 /* loader */
 
 .loader {

@@ -1,5 +1,3 @@
-
-
 var ccSessions = (function () {
 
     var sessionTimesKey = "session-times",
@@ -41,17 +39,24 @@ var ccSessions = (function () {
 
         },
 
-        saveSession: function (session) {
+        saveSession: function (id) {
 
-            return getSavedSessions()
-                .then(function (sessions) {
+            var self = this;
 
-                    sessions = sessions || [];
+            return this.getSessionById(id)
+                .then(function (session) {
 
-                    //this can stack up duplicates so need to fix...but I am tired.
-                    sessions.push(session);
+                    return self.getSavedSessions()
+                        .then(function (sessions) {
 
-                    localforage.setItem(savesSessions, sessions);
+                            sessions = sessions || [];
+
+                            //this can stack up duplicates so need to fix...but I am tired.
+                            sessions.push(session);
+
+                            return localforage.setItem(savesSessions, sessions);
+
+                        });
 
                 });
 
@@ -59,7 +64,9 @@ var ccSessions = (function () {
 
         removeSession: function (id) {
 
-            return getSavedSessions()
+            var self = this;
+
+            return this.getSavedSessions()
                 .then(function (sessions) {
 
                     if (sessions.length > 0) {
@@ -70,8 +77,33 @@ var ccSessions = (function () {
 
                         });
 
-                        localforage.setItem(savesSessions, sessions);
+                        return localforage.setItem(savesSessions, sessions);
 
+                    }
+
+                });
+
+        },
+
+        getSessionById: function (id) {
+
+            id = parseInt(id, 10);
+
+            return this.getSessions()
+                .then(function (sessions) {
+
+                    var _s = sessions.filter(function (session) {
+
+                        return session.id === id;
+
+                    });
+
+                    if (_s && _s.length > 0) {
+
+                        return _s[0];
+
+                    } else {
+                        return undefined;
                     }
 
                 });
@@ -88,10 +120,10 @@ var ccSessions = (function () {
 
                 var results = self.campSchedule.filter(function (session) {
 
-                    return ((session.title.toLowerCase().indexOf(term) > -1 || 
-                        session.body.toLowerCase().indexOf(term) > -1 ||
-                        session.speaker.toLowerCase().indexOf(term) > -1)
-                        && session.date.indexOf("2018-03-24") > -1);
+                    return ((session.title.toLowerCase().indexOf(term) > -1 ||
+                            session.body.toLowerCase().indexOf(term) > -1 ||
+                            session.speaker.toLowerCase().indexOf(term) > -1) &&
+                        session.date.indexOf("2018-03-24") > -1);
 
                 });
 

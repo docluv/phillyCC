@@ -18,13 +18,17 @@
                 return loadSessionCardTemplate();
 
             })
-            .then(function(){
+            .then(function () {
 
                 initMenuToggle();
 
                 if (location.pathname === "/") {
 
                     loadSessions();
+
+                } else {
+
+                    initSessionDetails();
 
                 }
 
@@ -83,7 +87,7 @@
 
                 if (savedSessions) {
 
-                    renderSelectedSessions(savedSessions);
+                    renderSearchResults(savedSessions);
 
                 } else {
 
@@ -95,11 +99,100 @@
 
     }
 
+    /* Session Details */
+
+    function initSessionDetails() {
+
+        var addToScheduleCB = _d.qs(".session-actions label"),
+            id = parseInt(addToScheduleCB.getAttribute("value"), 10);
+
+        if (addToScheduleCB) {
+
+            addToScheduleCB.addEventListener("click", function (e) {
+
+                e.preventDefault();
+
+                toggleSessiontoSchedule(e.target);
+
+            });
+
+        }
+
+        ccSessions.getSavedSessions()
+            .then(function (sessions) {
+
+                sessions = sessions.filter(function (session) {
+
+                    return session.id === id;
+
+                });
+
+                if (sessions && sessions.length > 0) {
+
+                    var cb = _d.qs("[name='cb" + id + "']");
+                    cb.checked = true;
+                }
+
+            });
+
+        bindMySessions();
+
+    }
+
+    function toggleSessiontoSchedule(target) {
+
+        var cbFor = target.getAttribute("for"),
+            value = target.getAttribute("value"),
+            cb = _d.qs("[name='" + cbFor + "']");
+
+        if (cb) {
+
+            if (cb.checked) {
+
+                cb.checked = false;
+                //push to session time filter
+                ccSessions.removeSession(value);
+
+            } else {
+
+                cb.checked = true;
+                //pop from session time filter
+                ccSessions.saveSession(value);
+
+            }
+
+        }
+
+    }
+
+    function bindMySessions() {
+
+        var mySessionsBtn = _d.qs(".btn-my-sessions");
+
+        mySessionsBtn.addEventListener("click", function (e) {
+
+            e.preventDefault();
+
+            renderMySessions();
+
+            return false;
+
+        });
+
+    }
+
+    function renderMySessions() {
+
+        return ccSessions.getSavedSessions()
+            .then(renderSearchResults);
+
+    }
+
     /*faceted search */
 
     function initFacetedSearch() {
 
-        var csBigChecks = _d.qsa(".big-check");
+        var csBigChecks = _d.qsa(".navigation-panel .big-check");
 
         for (var index = 0; index < csBigChecks.length; index++) {
 
@@ -181,7 +274,9 @@
 
         var target = _d.qs(".page-content");
 
-        target.innerHTML = Mustache.render(sessionCardTemplate, { sessions: results });
+        target.innerHTML = Mustache.render(sessionCardTemplate, {
+            sessions: results
+        });
 
     }
 
@@ -213,7 +308,7 @@
     initializeApp();
 
     if ('serviceWorker' in navigator) {
-            
+
         navigator.serviceWorker.register('/sw.js').then(function (registration) {
             // Registration was successful
 

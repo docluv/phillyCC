@@ -1,8 +1,17 @@
 <div class="session-detail">
     <h1 class="session-title">{{title}}</h1>
-    <p class="session-text"><b>{{speaker}}</b> {{#badge}}
-        <span class="badge badge-primary">{{.}}</span>{{/badge}}</p>
-    <p class="session-text"><b>{{time}} - {{#room}}{{.}}{{/room}}{{^room}}TBD{{/room}}</b>
-    <button class="btn btn-primary float-right">X</button></p>
-    {{{body}}}
+    <div class="session-details-container">
+        <p class="session-text">
+            <b>{{speaker}}</b> {{#badge}}
+            <span class="badge badge-primary">{{.}}</span>{{/badge}}</p>
+        <p class="session-text">
+            <b>{{time}} - {{#room}}{{.}}{{/room}}{{^room}}TBD{{/room}}</b>
+        </p>
+    </div>
+    <div class="session-actions">
+        <input type="checkbox" name="cb{{id}}">
+        <label for="cb{{id}}" value="{{id}}" class="big-check">Schedule</label>
+    </div>
+    <div class="session-description">
+        {{{body}}}</div>
 </div>
