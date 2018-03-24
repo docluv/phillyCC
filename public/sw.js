@@ -5,7 +5,7 @@ self.importScripts("js/libs/localforage.min.js",
     "js/app/sessions.js"
 );
 
-const version = "1.01",
+const version = "1.03",
     preCache = "PRECACHE-" + version,
     dynamicCache = "DYNAMIC-" + version,
     cacheList = [
@@ -79,7 +79,7 @@ self.addEventListener("fetch", event => {
                 return fetch(event.request)
                     .then(response => {
 
-                        if (response.ok) {
+                        if (response.ok || response.status === 0) {
 
                             //I have no clue why the chrome extensions requests are passed through the SW
                             //but I don't like the error messages in the console ;)

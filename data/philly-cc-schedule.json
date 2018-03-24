@@ -27,7 +27,7 @@
         "time": "15:00",
         "slug": "cross-platform-web-apps-with-asp-net-core",
         "title": "Cross-platform web apps with ASP .NET Core",
-        "body": "<p>Whether youíre developing on PC, Mac or Linux, learn how you can use Visual Studio Code on your development platform of choice and deploy to the cloud with ease. Get busy with the full-featured Visual Studio for Windows or the all-new Visual Studio for Mac. Start your project on a Mac, add new developers on Windows and deploy to Linux on Microsoft Azure. Pick and choose one of many ways of developing cross-platform web apps with the all-new open-source ASP .NET Core 2.1!</p>\n<p>Join Microsoft Sr. Technical Evangelist and CSE Engineer Shahed Chowdhuri in a fun and engaging session of web app development!</p>\n",
+        "body": "<p>Whether you‚Äôre developing on PC, Mac or Linux, learn how you can use Visual Studio Code on your development platform of choice and deploy to the cloud with ease. Get busy with the full-featured Visual Studio for Windows or the all-new Visual Studio for Mac. Start your project on a Mac, add new developers on Windows and deploy to Linux on Microsoft Azure. Pick and choose one of many ways of developing cross-platform web apps with the all-new open-source ASP .NET Core 2.1!</p>\n<p>Join Microsoft Sr. Technical Evangelist and CSE Engineer Shahed Chowdhuri in a fun and engaging session of web app development!</p>\n",
         "room": "MPR II",
         "speaker": "Shahed Chowdhuri",
         "badge": "MS"
@@ -60,7 +60,7 @@
         "time": "15:00",
         "slug": "thinking-outside-the-box-leveraging-unix-tools-gnu-for-data-analysis-and-validation",
         "title": "Thinking outside the box: Leveraging &#8220;UNIX Tools&#8221; (GNU) for Data Analysis and Validation",
-        "body": "<p>Life would be so much easier if everything was in a database or pulled via API. But that is not the case. All too often we get data files (or have to send them) in various formats. This session discusses some of the tools available to help you figure out what the file looks like so you can pull it apart using those tools or your tool-of-preference. While the GNU version of these tools will be the focus, the skills learned apply to many different platforms. Being available on so many platforms gives you lots of choices. Your choices include Microsoftís Bash under Windows 10, Cygwin under many Microsoft Windows versions, MAC OSX, the Linux core of Android, commercial Linux ó like Red Hat Enterprise, and commercial UNIX ó like IBMís AIX or Sun/Oracleís Solaris.</p>\n<p>Of particular interest are ëheadí, ëtailí, ëwcí, ëawkí, ëdd conví, and shells.</p>\n<p>A few of the differences between UNIX/Linux and Windows will also be discussed to ease your shifts in our heterogeneous environments. This knowledge also comes in handy if you need to migrate code from an existing UNIX/Linux-based application.</p>\n",
+        "body": "<p>Life would be so much easier if everything was in a database or pulled via API. But that is not the case. All too often we get data files (or have to send them) in various formats. This session discusses some of the tools available to help you figure out what the file looks like so you can pull it apart using those tools or your tool-of-preference. While the GNU version of these tools will be the focus, the skills learned apply to many different platforms. Being available on so many platforms gives you lots of choices. Your choices include Microsoft‚Äôs Bash under Windows 10, Cygwin under many Microsoft Windows versions, MAC OSX, the Linux core of Android, commercial Linux ‚Äî like Red Hat Enterprise, and commercial UNIX ‚Äî like IBM‚Äôs AIX or Sun/Oracle‚Äôs Solaris.</p>\n<p>Of particular interest are ‚Äòhead‚Äô, ‚Äòtail‚Äô, ‚Äòwc‚Äô, ‚Äòawk‚Äô, ‚Äòdd conv‚Äô, and shells.</p>\n<p>A few of the differences between UNIX/Linux and Windows will also be discussed to ease your shifts in our heterogeneous environments. This knowledge also comes in handy if you need to migrate code from an existing UNIX/Linux-based application.</p>\n",
         "room": "Wynnewood",
         "speaker": "David Horvath",
         "badge": ""
@@ -82,7 +82,7 @@
         "time": "15:00",
         "slug": "dropping-frames-creating-video-content-for-developers",
         "title": "Dropping Frames: Creating Video Content for Developers",
-        "body": "<p>Video is quickly becoming the preferred medium of learning for many software developers. Some look to recorded video tutorials on YouTube or subscription sites like Pluralsight. Others enjoy watching live coding sessions on Twitch or Mixer. Over the past year and a half at Twilio I focused on creating developer content both for Twitch and YouTube and significantly increased our subscriber base. Come and learn how to get started creating your own video content. Youíll see different tools and equipment in action as well as learn tips and tricks on how to get the most out of these video platforms.</p>\n",
+        "body": "<p>Video is quickly becoming the preferred medium of learning for many software developers. Some look to recorded video tutorials on YouTube or subscription sites like Pluralsight. Others enjoy watching live coding sessions on Twitch or Mixer. Over the past year and a half at Twilio I focused on creating developer content both for Twitch and YouTube and significantly increased our subscriber base. Come and learn how to get started creating your own video content. You‚Äôll see different tools and equipment in action as well as learn tips and tricks on how to get the most out of these video platforms.</p>\n",
         "room": "Malvern",
         "speaker": "Brent Schooley",
         "badge": "MVP"
@@ -93,7 +93,7 @@
         "time": "15:00",
         "slug": "stress-free-deployments-with-octopus-deploy-3",
         "title": "Stress Free Deployments with Octopus Deploy",
-        "body": "<p>Deployment can be a real headache but it doesnít have to be. You can and should make your life easier by automating your builds to reduce risk and stress. Octopus Deploy is a great tool and easy to use. In this demo, Iíll get you up to speed so you can start using Octopus Deploy to deploy .Net Applications. Weíll cover setting up Octopus, integrating with TFS (or other build servers), and deploying applications.</p>\n",
+        "body": "<p>Deployment can be a real headache but it doesn‚Äôt have to be. You can and should make your life easier by automating your builds to reduce risk and stress. Octopus Deploy is a great tool and easy to use. In this demo, I‚Äôll get you up to speed so you can start using Octopus Deploy to deploy .Net Applications. We‚Äôll cover setting up Octopus, integrating with TFS (or other build servers), and deploying applications.</p>\n",
         "room": "Merion",
         "speaker": "Andy Schwam",
         "badge": "MVP"
@@ -115,7 +115,7 @@
         "time": "15:00",
         "slug": "the-phenomenal-it-consultant-a-blueprint-to-getting-new-clients-charging-more-and-working-less",
         "title": "The Phenomenal IT Consultant &#8211; A Blueprint to Getting New Clients, Charging More, and Working Less",
-        "body": "<p>Whether you are just starting out or have been in business as an IT consultant for a while, if you desire more clients or wonder how to finally achieve success online, you are not alone.</p>\n<p>If you are like most independent consultants, you spend all your waking hours chasing after new clients. But somehow, you just canít get enough of them to say yes.</p>\n<p>Itís time for a change. Imagine having potential clients call you and demand that you take their money, instead of you calling them and being rejected. Imagine being able to pick and choose who you want to work with instead of having to take on everyone with a wallet. Imagine being able to increase your prices and spend less time working while still growing your income.</p>\n<p>Discover how this is possible: Join Sebastian Meine, Ph.D. for this unique session where he will introduce a simple way to attract new clients to your business: The NICER Client Attraction Methodô. </p>\n<p>In this session, youíll<br />\nï Learn why your current way of finding clients is actually driving them away.<br />\nï Experience ways to stop feeling like the best-kept secret in your field and instead be seen as a sought-after authority.<br />\nï Identify the five steps every client has to take before they will ever pay you. (Ignore them, and youíll lose a lot of business.)<br />\nï Discover the one thing you can do today thatíll make any conversation with a potential client easy. No more feeling like a used-car salesman. </p>\n<p>So, if you feel like you are treading water when it comes to marketing and growing your business, join this session and get started on your way to becoming a Phenomenal IT Consultant.</p>\n",
+        "body": "<p>Whether you are just starting out or have been in business as an IT consultant for a while, if you desire more clients or wonder how to finally achieve success online, you are not alone.</p>\n<p>If you are like most independent consultants, you spend all your waking hours chasing after new clients. But somehow, you just can‚Äôt get enough of them to say yes.</p>\n<p>It‚Äôs time for a change. Imagine having potential clients call you and demand that you take their money, instead of you calling them and being rejected. Imagine being able to pick and choose who you want to work with instead of having to take on everyone with a wallet. Imagine being able to increase your prices and spend less time working while still growing your income.</p>\n<p>Discover how this is possible: Join Sebastian Meine, Ph.D. for this unique session where he will introduce a simple way to attract new clients to your business: The NICER Client Attraction Method‚Ñ¢. </p>\n<p>In this session, you‚Äôll<br />\n‚Ä¢ Learn why your current way of finding clients is actually driving them away.<br />\n‚Ä¢ Experience ways to stop feeling like the best-kept secret in your field and instead be seen as a sought-after authority.<br />\n‚Ä¢ Identify the five steps every client has to take before they will ever pay you. (Ignore them, and you‚Äôll lose a lot of business.)<br />\n‚Ä¢ Discover the one thing you can do today that‚Äôll make any conversation with a potential client easy. No more feeling like a used-car salesman. </p>\n<p>So, if you feel like you are treading water when it comes to marketing and growing your business, join this session and get started on your way to becoming a Phenomenal IT Consultant.</p>\n",
         "room": "Cafe",
         "speaker": "Sebastian Meine",
         "badge": ""
@@ -132,6 +132,17 @@
         "badge": "MVP"
     },
     {
+        "id": 15917,
+        "date": "2018-03-24T13:30:52",
+        "time": "13:30",
+        "slug": "intro-to-razor-pages-2",
+        "title": "Intro to Razor Pages",
+        "body": "<p>The release of http://ASP.NET Core 2.0 introduces Razor Pages ‚Äì an alternate web development approach that sits on top of http://ASP.NET Core MVC and brings a simplified, page-based web development model to the .NET Core ecosystem.</p>\n<p>In this session I‚Äôll show you how the framework works, how it relates to http://ASP.NET Core MVC and how/when you can begin using it today, even in your existing http://ASP.NET Core MVC projects. Then we‚Äôll talk about when and why you might want to use Razor Pages, when you might want to use http://ASP.NET Core MVC‚Ä¶ or when you might want to use both!</p>\n",
+        "room": "MPR II",
+        "speaker": "Jess Chadwick",
+        "badge": "MVP"
+    },
+    {
         "id": 15939,
         "date": "2018-03-24T13:30:52",
         "time": "13:30",
@@ -143,23 +154,12 @@
         "badge": "MVP"
     },
     {
-        "id": 15917,
-        "date": "2018-03-24T13:30:52",
-        "time": "13:30",
-        "slug": "mastering-asp-net-mvc-5",
-        "title": "Mastering ASP.NET MVC 5",
-        "body": "<p>So, you&#8217;ve built a successful ASP.NET MVC 5 application and shipped it to production. Your boss is happy and everything&#8217;s going great. You&#8217;re even able to quickly and easily add new features when your customers ask for them. But then it starts to take a little longer to add that new feature, or you begin to see bugs in one area of the application when you&#8217;ve changed a completely different area, orÖ well, you get the point &#8211; your application works great, but it&#8217;s not as maintainable as it could be.</p>\n<p>It&#8217;s time to step up your game. It&#8217;s time to master ASP.NET MVC 5.</p>\n<p>In this session, I&#8217;ll show you a host of tips, tricks, and patterns that you can apply to your existing ASP.NET MVC 5 applications to make them easier to understand and maintain.<br />\nNOTE: this presentation is about ASP.NET MVC 5 (and most stuff is applicable to MVC 4, too) and NOT ASP.NET Core.</p>\n",
-        "room": "MPR II",
-        "speaker": "Jess Chadwick",
-        "badge": "MVP"
-    },
-    {
         "id": 15925,
         "date": "2018-03-24T13:30:40",
         "time": "13:30",
         "slug": "welcome-to-the-age-of-conversational-interfaces",
         "title": "WELCOME TO THE AGE OF CONVERSATIONAL INTERFACES!",
-        "body": "<p>In the age of conversational interfaces, users are increasingly expecting to interact with applications in a flexible and contextualised way. They also expect to interact with the app via multiple communication channels such as SMS, voice and lately bots. In this talk, we will go through programmable and contextual communications, why itís a key element of apps development in the present and future? We will also learn how to add feature rich communications capabilities to your apps using Microsoft Bot Framework and Nexmo SMS and Voice APIs.</p>\n",
+        "body": "<p>In the age of conversational interfaces, users are increasingly expecting to interact with applications in a flexible and contextualised way. They also expect to interact with the app via multiple communication channels such as SMS, voice and lately bots. In this talk, we will go through programmable and contextual communications, why it‚Äôs a key element of apps development in the present and future? We will also learn how to add feature rich communications capabilities to your apps using Microsoft Bot Framework and Nexmo SMS and Voice APIs.</p>\n",
         "room": "Merion",
         "speaker": "Rabeb Othmani",
         "badge": ""
@@ -192,7 +192,7 @@
         "time": "13:30",
         "slug": "megahertz-gigahertz-registers-and-instructions-how-does-a-cpu-actually-work",
         "title": "Megahertz, Gigahertz, Registers and Instructions: How does a CPU actually work?",
-        "body": "<p>For decades, weíve been creating ever higher abstractions between ourselves and the computing hardware weíre programming, but in the end whether youíre writing JavaScript, Haskell, or Python it all comes down to 1ís and 0ís running through hardware patterns that were well understood twenty years ago.</p>\n<p>Weíll walk through the fundamentals of how CPUís ìthinkî in an accessible way (no engineering degree required!) so you can appreciate the marvel that is the modern CPU be it in a server data center or your fridge at home. Youíll learn how a CPU turns the code we feed it into actions, whatís the big difference between an ARM and an Intel processor, how CPUís constantly optimize work for us, and where is it all going for the next few years.</p>\n<p>Finally, we&#8217;ll show how Meltdown and Spectre take advantage of CPU internals to expose data and why this class of security problems are going to be a challenge to the next generation of CPU&#8217;s.</p>\n",
+        "body": "<p>For decades, we‚Äôve been creating ever higher abstractions between ourselves and the computing hardware we‚Äôre programming, but in the end whether you‚Äôre writing JavaScript, Haskell, or Python it all comes down to 1‚Äôs and 0‚Äôs running through hardware patterns that were well understood twenty years ago.</p>\n<p>We‚Äôll walk through the fundamentals of how CPU‚Äôs ‚Äúthink‚Äù in an accessible way (no engineering degree required!) so you can appreciate the marvel that is the modern CPU be it in a server data center or your fridge at home. You‚Äôll learn how a CPU turns the code we feed it into actions, what‚Äôs the big difference between an ARM and an Intel processor, how CPU‚Äôs constantly optimize work for us, and where is it all going for the next few years.</p>\n<p>Finally, we&#8217;ll show how Meltdown and Spectre take advantage of CPU internals to expose data and why this class of security problems are going to be a challenge to the next generation of CPU&#8217;s.</p>\n",
         "room": "Strafford",
         "speaker": "Kendall Miller",
         "badge": ""
@@ -225,7 +225,7 @@
         "time": "13:30",
         "slug": "sql-server-indexing-for-developers-and-accidental-dbas",
         "title": "SQL Server Indexing for Developers and Accidental DBAs",
-        "body": "<p>So you have been tasked with making that query faster. You know that indexes often can help with query performance, but how do you even start going about it.</p>\n<p>Join Sebastian Meine, Ph.D. for this truly interactive session and discover how indexes in SQL Server work. After attending, youíll be able to answer common index questions, like:</p>\n<p>&#8211; Which columns should I add to my index?<br />\n&#8211; How many indexes should I add to my new table?<br />\n&#8211; Does the column order in my index have to match that in my query?<br />\n&#8211; Does it hurt to have too many indexes?<br />\n&#8211; When should I consolidate Indexes?<br />\n&#8211; Are there queries that get slower after I create an index?</p>\n<p>But even more important, youíll be able to explain how indexes are organized in SQL Server and what mechanism is responsible for the amazing performance gains you can achieve with them.</p>\n<p>Donít miss this unique session. Attend, and you might just turn into an indexing superstar.</p>\n",
+        "body": "<p>So you have been tasked with making that query faster. You know that indexes often can help with query performance, but how do you even start going about it.</p>\n<p>Join Sebastian Meine, Ph.D. for this truly interactive session and discover how indexes in SQL Server work. After attending, you‚Äôll be able to answer common index questions, like:</p>\n<p>&#8211; Which columns should I add to my index?<br />\n&#8211; How many indexes should I add to my new table?<br />\n&#8211; Does the column order in my index have to match that in my query?<br />\n&#8211; Does it hurt to have too many indexes?<br />\n&#8211; When should I consolidate Indexes?<br />\n&#8211; Are there queries that get slower after I create an index?</p>\n<p>But even more important, you‚Äôll be able to explain how indexes are organized in SQL Server and what mechanism is responsible for the amazing performance gains you can achieve with them.</p>\n<p>Don‚Äôt miss this unique session. Attend, and you might just turn into an indexing superstar.</p>\n",
         "room": "Wynnewood",
         "speaker": "Sebastian Meine",
         "badge": ""
@@ -313,7 +313,7 @@
         "time": "11:30",
         "slug": "go-serverless-with-azure-functions-logic-apps-and-eventgrid",
         "title": "Go Serverless with Azure Functions, Logic Apps and EventGrid",
-        "body": "<p>Azureís serverless story makes it dead simple to decompose your clunky monolithic apps into performant DevOps-friendly microservices. Join Microsoft Cloud Solutions Architect Louis Berman as he shows you how to build and deploy a significant cloud-scale application by live-coding a real-world example of automating employee on-boarding to the Microsoft Graph as a serverless app. As a bonus heíll also show you how to get a handle on your serverless workloads through DevOps.</p>\n",
+        "body": "<p>Azure‚Äôs serverless story makes it dead simple to decompose your clunky monolithic apps into performant DevOps-friendly microservices. Join Microsoft Cloud Solutions Architect Louis Berman as he shows you how to build and deploy a significant cloud-scale application by live-coding a real-world example of automating employee on-boarding to the Microsoft Graph as a serverless app. As a bonus he‚Äôll also show you how to get a handle on your serverless workloads through DevOps.</p>\n",
         "room": "30th Street",
         "speaker": "Louis Berman",
         "badge": "MS"
@@ -324,7 +324,7 @@
         "time": "11:30",
         "slug": "getting-pushy-with-signalr-and-reactive-extensions-2",
         "title": "Getting pushy with SignalR and Reactive Extensions",
-        "body": "<p>As our systems increasingly demand more real-time updates, we need better ways of working with these live streams of information. Traditional pull models fail to provide the real-time responsiveness and scale needs that modern systems expect. Moving to a push model allows us to scale easier and react to new data as it becomes available. SignalR facilitates push notifications over HTTP to a variety of clients. The Reactive Extensions were designed to allow for asynchronous LINQ over push based collections. In this talk, youíll see how the synergy of these two technologies merge to make otherwise difficult tasks, a push over.</p>\n",
+        "body": "<p>As our systems increasingly demand more real-time updates, we need better ways of working with these live streams of information. Traditional pull models fail to provide the real-time responsiveness and scale needs that modern systems expect. Moving to a push model allows us to scale easier and react to new data as it becomes available. SignalR facilitates push notifications over HTTP to a variety of clients. The Reactive Extensions were designed to allow for asynchronous LINQ over push based collections. In this talk, you‚Äôll see how the synergy of these two technologies merge to make otherwise difficult tasks, a push over.</p>\n",
         "room": "MPR II",
         "speaker": "Jim Wooley",
         "badge": "MVP"
@@ -335,7 +335,7 @@
         "time": "11:30",
         "slug": "zen-and-the-art-of-programming-2",
         "title": "Zen and the Art of Programming",
-        "body": "<p>Although software development is taught as a STEM out of Science or Engineering schools, it is as much an art or craft a creative process as a science. This presentation focuses on innovative problem solving techniques ñ the tools and techniques to use when your normal process just doesnít seem to get you to a solution. Much of the information in this talk is based on Robert Pirsigís Zen and the Art of Motorcycle Maintenance, which, although it is focusing on Motorcycles, applies to all kinds of problem spaces (and Pirsig was a tech writer for IBM). These techniques have served me well over the years. The difference in art versus science approaches is actually supported by the way the brain works. The talk will cover such areas as:<br />\n* Traditional Problem Solving Methods, where they fall down<br />\n* Eastern techniques, advantages, disadvantages<br />\n* General Tips and how they apply in specific examples<br />\n* Brain versus Mind</p>\n",
+        "body": "<p>Although software development is taught as a STEM out of Science or Engineering schools, it is as much an art or craft a creative process as a science. This presentation focuses on innovative problem solving techniques ‚Äì the tools and techniques to use when your normal process just doesn‚Äôt seem to get you to a solution. Much of the information in this talk is based on Robert Pirsig‚Äôs Zen and the Art of Motorcycle Maintenance, which, although it is focusing on Motorcycles, applies to all kinds of problem spaces (and Pirsig was a tech writer for IBM). These techniques have served me well over the years. The difference in art versus science approaches is actually supported by the way the brain works. The talk will cover such areas as:<br />\n* Traditional Problem Solving Methods, where they fall down<br />\n* Eastern techniques, advantages, disadvantages<br />\n* General Tips and how they apply in specific examples<br />\n* Brain versus Mind</p>\n",
         "room": "Merion",
         "speaker": "David Horvath",
         "badge": ""
@@ -434,20 +434,9 @@
         "time": "10:00",
         "slug": "fast-neural-networks-a-no-brainer-the-actor-model-as-neuron",
         "title": "Fast Neural Networks&#8230; a no brainer! The Actor model as neuron",
-        "body": "<p>Artificial Neural Networks are a fascinating computational approach modeled to react similar to a biological brain to solve problems. Neural networks are a very powerful tool that enable machines to teach and evolve themselves. You can utilize this power in almost any application. Don&#8217;t be intimidated by the equations and Greek symbols of this cutting-edge technology, I will guide you on how to slay this technology and make it bend to your will! In this session, we are going to demystify the presumed complexity of Neural Networks. No need for a PhD or mathematical background, after this overview, you will be discussing these concepts around the water cooler. There will be very little math and lots of coding. The goal is for everyone to become acquainted with Neural Network from a pragmatic standpoint. </p>\n<p>In this session, we will take a closer look at artificial neural networks inspired by biological neurons. We will study how these neurons can be modeled in a digital counterpart. After a short introduction of the actor model, the communalities between neurons and how Actors work by building an asynchronous and reactive neural network will be demonstrated.<br />\nJust when you think it couldn&#8217;t get any better, I will show you how to employ the functional paradigm to leverage multicore machines and GPUs to make your neural network predictions infinitely faster through parallelism. </p>\n<p>By the end of this talk, you will learn the basic concepts of Neural Network and how to apply functional concurrency to estimate future stock prices at smoking fast speedsÖand perhaps get rich while practicing!</p>\n",
+        "body": "<p>Artificial Neural Networks are a fascinating computational approach modeled to react similar to a biological brain to solve problems. Neural networks are a very powerful tool that enable machines to teach and evolve themselves. You can utilize this power in almost any application. Don&#8217;t be intimidated by the equations and Greek symbols of this cutting-edge technology, I will guide you on how to slay this technology and make it bend to your will! In this session, we are going to demystify the presumed complexity of Neural Networks. No need for a PhD or mathematical background, after this overview, you will be discussing these concepts around the water cooler. There will be very little math and lots of coding. The goal is for everyone to become acquainted with Neural Network from a pragmatic standpoint. </p>\n<p>In this session, we will take a closer look at artificial neural networks inspired by biological neurons. We will study how these neurons can be modeled in a digital counterpart. After a short introduction of the actor model, the communalities between neurons and how Actors work by building an asynchronous and reactive neural network will be demonstrated.<br />\nJust when you think it couldn&#8217;t get any better, I will show you how to employ the functional paradigm to leverage multicore machines and GPUs to make your neural network predictions infinitely faster through parallelism. </p>\n<p>By the end of this talk, you will learn the basic concepts of Neural Network and how to apply functional concurrency to estimate future stock prices at smoking fast speeds‚Ä¶and perhaps get rich while practicing!</p>\n",
         "room": "30th Street",
         "speaker": "Riccardo Terrell",
-        "badge": "MS"
-    },
-    {
-        "id": 15872,
-        "date": "2018-03-24T10:00:19",
-        "time": "10:00",
-        "slug": "fault-driven-development",
-        "title": "Fault Driven Development",
-        "body": "<p>Failure IS an option! Developing cloud-first applications can be fundamentally different than building traditional on-prem applications. As a cloud app developer, you need to be prepared for and expect failures in your code as well as in your app environment. This session will arm you with tools to be proactive with fault tolerance and reactive with fault handling.</p>\n",
-        "room": "Strafford",
-        "speaker": "Josh Garverick",
         "badge": "MVP"
     },
     {
@@ -460,6 +449,17 @@
         "room": "Merion",
         "speaker": "Anna Bateman",
         "badge": ""
+    },
+    {
+        "id": 15872,
+        "date": "2018-03-24T10:00:19",
+        "time": "10:00",
+        "slug": "fault-driven-development",
+        "title": "Fault Driven Development",
+        "body": "<p>Failure IS an option! Developing cloud-first applications can be fundamentally different than building traditional on-prem applications. As a cloud app developer, you need to be prepared for and expect failures in your code as well as in your app environment. This session will arm you with tools to be proactive with fault tolerance and reactive with fault handling.</p>\n",
+        "room": "Strafford",
+        "speaker": "Josh Garverick",
+        "badge": "MVP"
     },
     {
         "id": 15811,
@@ -588,7 +588,7 @@
         "time": "08:30",
         "slug": "zero-to-devops-with-vsts",
         "title": "Zero to DevOps (with VSTS)",
-        "body": "<p>DevOps is the secret sauce behind today&#8217;s most successful development teams and companies. Join Microsoft Cloud Solutions Architect Louis Berman as he shows you how to speed your race into the cloud; in many cases by as much as 10x within a single year. In this demo-heavy session Mr. Berman will demonstrate how very easy it is for every organization to adopt DevOps, but just as importantly heíll also focus on the soft-skills needed to ìsellî DevOps to your clients and peers. The session will conclude with Mr. Bermanís ìTop 10 Tips for DevOps Success!î</p>\n",
+        "body": "<p>DevOps is the secret sauce behind today&#8217;s most successful development teams and companies. Join Microsoft Cloud Solutions Architect Louis Berman as he shows you how to speed your race into the cloud; in many cases by as much as 10x within a single year. In this demo-heavy session Mr. Berman will demonstrate how very easy it is for every organization to adopt DevOps, but just as importantly he‚Äôll also focus on the soft-skills needed to ‚Äúsell‚Äù DevOps to your clients and peers. The session will conclude with Mr. Berman‚Äôs ‚ÄúTop 10 Tips for DevOps Success!‚Äù</p>\n",
         "room": "Wynnewood",
         "speaker": "Louis Berman",
         "badge": "MS"
@@ -610,7 +610,7 @@
         "time": "08:30",
         "slug": "get-ready-to-develop-apps-for-ultra-modern-businesses",
         "title": "Get ready to develop apps for ultra-modern businesses",
-        "body": "<p><a style=\"float: right; display: inline-block; background-color: darkred; color: white; border-radius: 10px; padding: 10px; cursor: pointer; text-decoration: none; font-size: large; font-weight: bold; line-height: 10px; margin-left:15px;\" href=\"#\">Sold Out</a>Microservices aren&#8217;t just small services. A microservice architecture is a very different approach to building applications. In this hands-on lab we&#8217;ll build the data and services layers as well as server-less features for an ultra-modern business plan and marry them to pre-built web and mobile apps for an end-to-end example that demonstrates how apps are now being built. This is not the architecture youíre accustomed to!</p>\n<p>You&#8217;ll need an Azure subscription, so sign up for a free trial on Thursday if you don&#8217;t already have one. We&#8217;re also going to use Visual Studio 2017 with at least the &#8220;ASP.NET and web development&#8221;, &#8220;Azure development&#8221;, &#8220;Data storage and processing&#8221; and &#8220;.NET Core cross-platform development&#8221; workloads installed. The &#8220;Mobile development with .NET&#8221; workload is optional. The free Community Edition is fine. If you are running Windows 10 Pro or above and want to use Docker containers for the lab, please install the latest Docker For Windows from https://docs.docker.com/docker-for-windows/install/ as well.</p>\n",
+        "body": "<p><a style=\"float: right; display: inline-block; background-color: darkred; color: white; border-radius: 10px; padding: 10px; cursor: pointer; text-decoration: none; font-size: large; font-weight: bold; line-height: 10px; margin-left:15px;\" href=\"#\">Sold Out</a>Microservices aren&#8217;t just small services. A microservice architecture is a very different approach to building applications. In this hands-on lab we&#8217;ll build the data and services layers as well as server-less features for an ultra-modern business plan and marry them to pre-built web and mobile apps for an end-to-end example that demonstrates how apps are now being built. This is not the architecture you‚Äôre accustomed to!</p>\n<p>You&#8217;ll need an Azure subscription, so sign up for a free trial on Thursday if you don&#8217;t already have one. We&#8217;re also going to use Visual Studio 2017 with at least the &#8220;ASP.NET and web development&#8221;, &#8220;Azure development&#8221;, &#8220;Data storage and processing&#8221; and &#8220;.NET Core cross-platform development&#8221; workloads installed. The &#8220;Mobile development with .NET&#8221; workload is optional. The free Community Edition is fine. If you are running Windows 10 Pro or above and want to use Docker containers for the lab, please install the latest Docker For Windows from https://docs.docker.com/docker-for-windows/install/ as well.</p>\n",
         "room": null,
         "speaker": "Mike Yeager",
         "badge": ""
@@ -654,20 +654,9 @@
         "time": "08:30",
         "slug": "powershell-primer-2",
         "title": "PowerShell Primer",
-        "body": "<p><a style=\"float: right; display: inline-block; background-color: darkred; color: white; border-radius: 10px; padding: 10px; cursor: pointer; text-decoration: none; font-size: large; font-weight: bold; line-height: 10px; margin-left:15px;\" href=\"#\">Sold Out</a>Whether you&#8217;re an ITPro or a Developer, this workshop is designed to give you real world experience learning PowerShell in depth.</p>\n<p>This PowerShell Workshop is presented by 9 time Microsoft Award recipient Doug Finke and author of &#8220;PowerShell For Developers&#8221;, magazine articles (MSDN, Dr. Dobb&#8217;s, PowerShell Magazine, Microsoft&#8217;s Hey Scripting Guys, and Net Tuts+) and numerous PowerShell blog posts.</p>\n<p>PowerShell is a key technology in Microsoftës strategy for automation and DevOps. Enabling agility, automation at scale and is fundamental to continuous delivery of your companies software and services.</p>\n<p>Consider this:</p>\n<p>* How long would it take your organization to deploy a change that involves a single line of code?<br />\n* Do you do this on a repeatable, reliable basis?<br />\n* What if you automated all the error prone steps in your day to day job? Could you get done faster?</p>\n<p>The time from deciding that you need to make a change to having it in production is called cycle time.</p>\n<p>Come learn how PowerShell makes this happen.</p>\n<p>You&#8217;ll Learn</p>\n<p>* Core PowerShell<br />\n* Functions, Scripts and Modules<br />\n* Flow &#038; Control<br />\n* Serverless PowerShell and Azure Functions<br />\n* Tool Making in PowerShell<br />\n* PowerShell v6.0</p>\n",
+        "body": "<p><a style=\"float: right; display: inline-block; background-color: darkred; color: white; border-radius: 10px; padding: 10px; cursor: pointer; text-decoration: none; font-size: large; font-weight: bold; line-height: 10px; margin-left:15px;\" href=\"#\">Sold Out</a>Whether you&#8217;re an ITPro or a Developer, this workshop is designed to give you real world experience learning PowerShell in depth.</p>\n<p>This PowerShell Workshop is presented by 9 time Microsoft Award recipient Doug Finke and author of &#8220;PowerShell For Developers&#8221;, magazine articles (MSDN, Dr. Dobb&#8217;s, PowerShell Magazine, Microsoft&#8217;s Hey Scripting Guys, and Net Tuts+) and numerous PowerShell blog posts.</p>\n<p>PowerShell is a key technology in Microsoft‚Äòs strategy for automation and DevOps. Enabling agility, automation at scale and is fundamental to continuous delivery of your companies software and services.</p>\n<p>Consider this:</p>\n<p>* How long would it take your organization to deploy a change that involves a single line of code?<br />\n* Do you do this on a repeatable, reliable basis?<br />\n* What if you automated all the error prone steps in your day to day job? Could you get done faster?</p>\n<p>The time from deciding that you need to make a change to having it in production is called cycle time.</p>\n<p>Come learn how PowerShell makes this happen.</p>\n<p>You&#8217;ll Learn</p>\n<p>* Core PowerShell<br />\n* Functions, Scripts and Modules<br />\n* Flow &#038; Control<br />\n* Serverless PowerShell and Azure Functions<br />\n* Tool Making in PowerShell<br />\n* PowerShell v6.0</p>\n",
         "room": null,
         "speaker": "Doug Finke",
-        "badge": "MVP"
-    },
-    {
-        "id": 15780,
-        "date": "2018-03-23T08:30:35",
-        "time": "08:30",
-        "slug": "improving-code-quality-with-roslyn-code-analyzers",
-        "title": "Improving code quality with Roslyn Code Analyzers",
-        "body": "<p><a style=\"float: right; display: inline-block; background-color: darkred; color: white; border-radius: 10px; padding: 10px; cursor: pointer; text-decoration: none; font-size: large; font-weight: bold; line-height: 10px; margin-left:15px;\" href=\"#\">Sold Out</a>The new .Net compliers in Visual Studio 2015 include the ability to expose the language services to allow developers to build their own analyzers and code fixes/refactorings. In this session we&#8217;ll introduce you to the capabilities of the compiler platform and demonstrate how we can extend it to more proactively catch common coding smells and patterns that would have otherwise caused runtime exceptions that can be caught during compilation instead. If you&#8217;ve relied on third party commercial coding tools like resharper in the past, you&#8217;ll see how you can build your own tooling extensions or leverage some of the many open source solutions.</p>\n",
-        "room": null,
-        "speaker": "Jim Wooley",
         "badge": "MVP"
     },
     {
@@ -682,6 +671,17 @@
         "badge": "MVP"
     },
     {
+        "id": 15780,
+        "date": "2018-03-23T08:30:35",
+        "time": "08:30",
+        "slug": "improving-code-quality-with-roslyn-code-analyzers",
+        "title": "Improving code quality with Roslyn Code Analyzers",
+        "body": "<p><a style=\"float: right; display: inline-block; background-color: darkred; color: white; border-radius: 10px; padding: 10px; cursor: pointer; text-decoration: none; font-size: large; font-weight: bold; line-height: 10px; margin-left:15px;\" href=\"#\">Sold Out</a>The new .Net compliers in Visual Studio 2015 include the ability to expose the language services to allow developers to build their own analyzers and code fixes/refactorings. In this session we&#8217;ll introduce you to the capabilities of the compiler platform and demonstrate how we can extend it to more proactively catch common coding smells and patterns that would have otherwise caused runtime exceptions that can be caught during compilation instead. If you&#8217;ve relied on third party commercial coding tools like resharper in the past, you&#8217;ll see how you can build your own tooling extensions or leverage some of the many open source solutions.</p>\n",
+        "room": null,
+        "speaker": "Jim Wooley",
+        "badge": "MVP"
+    },
+    {
         "id": 15774,
         "date": "2018-03-23T08:30:02",
         "time": "08:30",
@@ -690,6 +690,6 @@
         "body": "<p><a style=\"float: right; display: inline-block; background-color: darkred; color: white; border-radius: 10px; padding: 10px; cursor: pointer; text-decoration: none; font-size: large; font-weight: bold; line-height: 10px; margin-left:15px;\" href=\"#\">Sold Out</a>Become the master of the multicore domain. Learn how to harness the powers of parallel computation and multicore computation to dominate peer applications in finance software, video games, web applications and market analysis. To yield the most performance, computer programmers have to partition and divide computations to maximize the performance while taking full advantage of multicore processors. Start your path from Padawan to Jedi, after this workshop you will be ready to return to work and have code bend to your will. </p>\n<p>Concurrency, multi-core parallelism, and distributed parallelism are powerful and accessible. These computing concepts promise big impacts on the full spectrum of software applications, including video games, web applications and market analytics suites. Programmers of these products know how to partition computations over large distributed datasets in order to take full advantage of modern hardware and computing environments. These programming skills are not easy to master. This course will introduce technologies and tools available to developers at every level who are interested in achieving high-performance, reliable and maintainable code through functional-style parallelism and concurrency.</p>\n<p>We are facing a new era of geographically-distributed, highly-available systems with processor designs that are scaling out in core counts quicker than they are scaling up in core speeds. In keeping up with performance expectations as complexities and dataset grow, scaling out software architectures over these modern computing resources is one of the biggest challenges facing developers today. </p>\n<p>This course will introduce you to technologies and tools available to developers at every level who are interested in achieving exceptional performance in applications. You will gain an insight into the best practices necessary to build concurrent and scalable programs in .NET using the functional paradigm, which covers OnPrem and Cloud based applications.</p>\n<p>Notes and comments<br />\nThe following objectives will be satisfied during the duration of the course:</p>\n<p>1.\tFunctional Programming Techniques for Concurrency<br />\n2.\tBuilding high-performance concurrent systems<br />\n3.\tImplementing high-volume real-time event stream processing<br />\n4.\tImplementing concurrent patterns such as divide-and-conquer, fork/join, producer-consumer, Map-Reduce, pipeline and more<br />\n5.\tAsynchronous Functional Combinators<br />\n6.\tApplying Reactive Programming Everywhere with Agents and Actors<br />\n7.\tHow to develop applications that scale up &#038; out using the same programming model (Agents and/or Actors)</p>\n<p>Target Audience<br />\nAny developer who want to improve their skills and employ polyglot techniques to solve concurrent problems</p>\n<p>Prerequisite<br />\nThe preferred audience for this course is as follows:<br />\n&#8211; Developer with 2-3 years&#8217; experience and/or architect.<br />\n&#8211; Basic knowledge a programming language, recommended either C# or F#<br />\n&#8211; No experience in functional programming is necessary<br />\n&#8211; Developers who want to improve their skills and employ polyglot techniques to solve problems.</p>\n",
         "room": null,
         "speaker": "Riccardo Terrell",
-        "badge": "MS"
+        "badge": "MVP"
     }
 ]

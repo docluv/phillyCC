@@ -23,8 +23,15 @@ function renderSession(session) {
 
     let sessionShell = appShell.replace("<%template%>", sessionTemplate),
         html = mustache.render(sessionShell, session),
-        folder = path.resolve("../public/session/" + session.slug),
-        stats = fs.lstatSync(folder);
+        folder = path.resolve("../public/session/" + session.slug);
+
+    if (!fs.existsSync(folder)) {
+
+        fs.mkdirSync(folder);
+
+    }
+
+    var stats = fs.lstatSync(folder);
 
     if (!fs.existsSync(folder)) {
 
