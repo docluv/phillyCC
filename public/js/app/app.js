@@ -1,6 +1,6 @@
-"use strict"; //https://love2dev.com/blog/javascript-strict-mode/
+( function () {
 
-(function () {
+    "use strict"; //https://love2dev.com/blog/javascript-strict-mode/
 
     //initialize campSchedule as an array so the search will work in case it is empty ;)
     var filteredSessions = [],
@@ -13,16 +13,16 @@
         initSearch();
 
         ccSessions.getSessions()
-            .then(function () {
+            .then( function () {
 
                 return loadSessionCardTemplate();
 
-            })
-            .then(function () {
+            } )
+            .then( function () {
 
                 initMenuToggle();
 
-                if (location.pathname === "/") {
+                if ( location.pathname === "/" ) {
 
                     loadSessions();
 
@@ -32,28 +32,28 @@
 
                 }
 
-            });
+            } );
 
     }
 
     // Menu toggle
     function initMenuToggle() {
 
-        var toggler = _d.qs(".navbar-toggler");
+        var toggler = _d.qs( ".navbar-toggler" );
 
-        toggler.addEventListener("click", function (evt) {
+        toggler.addEventListener( "click", function ( evt ) {
 
             toggleMenu();
 
-        });
+        } );
 
     }
 
     function toggleMenu() {
         /* Choose 992 because that is the break point where BS hides the menu toggle button */
-        if (document.body.clientWidth < 992) {
+        if ( document.body.clientWidth < 992 ) {
 
-            document.body.classList.toggle("menu-toggle");
+            document.body.classList.toggle( "menu-toggle" );
 
         }
 
@@ -61,21 +61,21 @@
 
     function initMySessions() {
 
-        var btnMySessions = _d.qs(".btn-my-session");
+        var btnMySessions = _d.qs( ".btn-my-session" );
 
-        btnMySessions.addEventListener("click", function () {
+        btnMySessions.addEventListener( "click", function () {
 
             ccSessions.getSavedSessions()
-                .then(renderSearchResults);
+                .then( renderSearchResults );
 
-        });
+        } );
 
     }
 
     function renderFullSchedule() {
 
         ccSessions.getFacetedSessions()
-            .then(renderSearchResults);
+            .then( renderSearchResults );
 
     }
 
@@ -83,11 +83,11 @@
 
         //attempt to load the user's schedule first, then the 'full' schedule
         ccSessions.getSavedSessions()
-            .then(function (savedSessions) {
+            .then( function ( savedSessions ) {
 
-                if (savedSessions) {
+                if ( savedSessions ) {
 
-                    renderSearchResults(savedSessions);
+                    renderSearchResults( savedSessions );
 
                 } else {
 
@@ -95,7 +95,7 @@
 
                 }
 
-            });
+            } );
 
     }
 
@@ -103,61 +103,61 @@
 
     function initSessionDetails() {
 
-        var addToScheduleCB = _d.qs(".session-actions label"),
-            id = parseInt(addToScheduleCB.getAttribute("value"), 10);
+        var addToScheduleCB = _d.qs( ".session-actions label" ),
+            id = parseInt( addToScheduleCB.getAttribute( "value" ), 10 );
 
-        if (addToScheduleCB) {
+        if ( addToScheduleCB ) {
 
-            addToScheduleCB.addEventListener("click", function (e) {
+            addToScheduleCB.addEventListener( "click", function ( e ) {
 
                 e.preventDefault();
 
-                toggleSessiontoSchedule(e.target);
+                toggleSessiontoSchedule( e.target );
 
-            });
+            } );
 
         }
 
         ccSessions.getSavedSessions()
-            .then(function (sessions) {
+            .then( function ( sessions ) {
 
-                sessions = sessions.filter(function (session) {
+                sessions = sessions.filter( function ( session ) {
 
                     return session.id === id;
 
-                });
+                } );
 
-                if (sessions && sessions.length > 0) {
+                if ( sessions && sessions.length > 0 ) {
 
-                    var cb = _d.qs("[name='cb" + id + "']");
+                    var cb = _d.qs( "[name='cb" + id + "']" );
                     cb.checked = true;
                 }
 
-            });
+            } );
 
         bindMySessions();
 
     }
 
-    function toggleSessiontoSchedule(target) {
+    function toggleSessiontoSchedule( target ) {
 
-        var cbFor = target.getAttribute("for"),
-            value = target.getAttribute("value"),
-            cb = _d.qs("[name='" + cbFor + "']");
+        var cbFor = target.getAttribute( "for" ),
+            value = target.getAttribute( "value" ),
+            cb = _d.qs( "[name='" + cbFor + "']" );
 
-        if (cb) {
+        if ( cb ) {
 
-            if (cb.checked) {
+            if ( cb.checked ) {
 
                 cb.checked = false;
                 //push to session time filter
-                ccSessions.removeSession(value);
+                ccSessions.removeSession( value );
 
             } else {
 
                 cb.checked = true;
                 //pop from session time filter
-                ccSessions.saveSession(value);
+                ccSessions.saveSession( value );
 
             }
 
@@ -167,9 +167,9 @@
 
     function bindMySessions() {
 
-        var mySessionsBtn = _d.qs(".btn-my-sessions");
+        var mySessionsBtn = _d.qs( ".btn-my-sessions" );
 
-        mySessionsBtn.addEventListener("click", function (e) {
+        mySessionsBtn.addEventListener( "click", function ( e ) {
 
             e.preventDefault();
 
@@ -177,14 +177,14 @@
 
             return false;
 
-        });
+        } );
 
     }
 
     function renderMySessions() {
 
         return ccSessions.getSavedSessions()
-            .then(renderSearchResults);
+            .then( renderSearchResults );
 
     }
 
@@ -192,91 +192,91 @@
 
     function initFacetedSearch() {
 
-        var csBigChecks = _d.qsa(".navigation-panel .big-check");
+        var csBigChecks = _d.qsa( ".navigation-panel .big-check" );
 
-        for (var index = 0; index < csBigChecks.length; index++) {
+        for ( var index = 0; index < csBigChecks.length; index++ ) {
 
-            initFacetedFilter(csBigChecks[index]);
+            initFacetedFilter( csBigChecks[ index ] );
 
         }
 
         ccSessions.getSelectedTimes()
-            .then(function (times) {
+            .then( function ( times ) {
 
-                times.forEach(function (sessionTime) {
+                times.forEach( function ( sessionTime ) {
 
-                    var sessionCB = _d.qs("[name=cb" + sessionTime.replace(":", "") + "]");
+                    var sessionCB = _d.qs( "[name=cb" + sessionTime.replace( ":", "" ) + "]" );
 
                     sessionCB.checked = true;
 
-                });
+                } );
 
-            });
+            } );
 
     }
 
-    function initFacetedFilter(cbLabel) {
+    function initFacetedFilter( cbLabel ) {
 
-        cbLabel.addEventListener("click", function (e) {
+        cbLabel.addEventListener( "click", function ( e ) {
 
             e.preventDefault();
 
-            var cbFor = e.target.getAttribute("for"),
-                value = e.target.getAttribute("value"),
-                cb = _d.qs("[name='" + cbFor + "']");
+            var cbFor = e.target.getAttribute( "for" ),
+                value = e.target.getAttribute( "value" ),
+                cb = _d.qs( "[name='" + cbFor + "']" );
 
-            if (cb) {
+            if ( cb ) {
 
-                if (cb.checked) {
+                if ( cb.checked ) {
 
                     cb.checked = false;
                     //push to session time filter
-                    ccSessions.removeSessionTime(value)
-                        .then(renderFullSchedule);
+                    ccSessions.removeSessionTime( value )
+                        .then( renderFullSchedule );
 
                 } else {
 
                     cb.checked = true;
                     //pop from session time filter
-                    ccSessions.addSessionTime(value)
-                        .then(renderFullSchedule);
+                    ccSessions.addSessionTime( value )
+                        .then( renderFullSchedule );
 
                 }
 
             }
 
-        });
+        } );
 
     }
 
     /* search */
     function initSearch() {
 
-        var searchBox = _d.qs(".search-query");
+        var searchBox = _d.qs( ".search-query" );
 
-        searchBox.addEventListener("keyup", function (evt) {
+        searchBox.addEventListener( "keyup", function ( evt ) {
 
             evt.preventDefault();
 
-            if (searchBox.value.length > 3 || evt.keyCode === 13) {
+            if ( searchBox.value.length > 3 || evt.keyCode === 13 ) {
 
-                ccSessions.searchSessions(searchBox.value)
-                    .then(renderSearchResults);
+                ccSessions.searchSessions( searchBox.value )
+                    .then( renderSearchResults );
             }
 
             return false;
 
-        });
+        } );
 
     }
 
-    function renderSearchResults(results) {
+    function renderSearchResults( results ) {
 
-        var target = _d.qs(".page-content");
+        var target = _d.qs( ".page-content" );
 
-        target.innerHTML = Mustache.render(sessionCardTemplate, {
+        target.innerHTML = Mustache.render( sessionCardTemplate, {
             sessions: results
-        });
+        } );
 
     }
 
@@ -284,42 +284,42 @@
 
     function loadSessionCardTemplate() {
 
-        return fetch("templates/session-list-item.html")
-            .then(function (response) {
+        return fetch( "templates/session-list-item.html" )
+            .then( function ( response ) {
 
-                if (response.ok) {
+                if ( response.ok ) {
 
                     return response.text()
-                        .then(function (template) {
+                        .then( function ( template ) {
 
                             sessionCardTemplate = template;
 
                             return;
-                        });
+                        } );
 
                 }
 
                 return;
 
-            })
+            } );
 
     }
 
     initializeApp();
 
-    if ('serviceWorker' in navigator) {
+    if ( 'serviceWorker' in navigator ) {
 
-        navigator.serviceWorker.register('/sw.js').then(function (registration) {
+        navigator.serviceWorker.register( '/sw.js' ).then( function ( registration ) {
             // Registration was successful
 
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            console.log( 'ServiceWorker registration successful with scope: ', registration.scope );
 
-        }).catch(function (err) {
+        } ).catch( function ( err ) {
             // registration failed :(
 
-            console.log('ServiceWorker registration failed: ', err);
-        });
+            console.log( 'ServiceWorker registration failed: ', err );
+        } );
 
     }
 
-})();
+} )();

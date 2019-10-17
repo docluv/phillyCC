@@ -1,0 +1,18 @@
+<div class="m-5 col-12 col-lg-6" id="{{id}}">
+    <div class="card-body">
+        <h1 class="card-title">{{fullName}}</h1>
+        {{#tagLine}}<h3 class="card-title">{{.}}</h3>{{/tagLine}}
+        <p class="card-text">{{bio}}</p>
+        <div class="card-list my-1 p-1 border-top">
+            <h3>Sessions</h3>
+            {{#sessions}}
+            <div class="session-box">
+                <h3 class="card-title-2">{{title}}</h3>
+                <p class="card-text"><a href="session/{{id}}/" class="card-link btn btn-primary float-right">Details</a>
+                </p>
+            </div>
+            {{/sessions}}
+        </div>
+    </div>
+</div>
+</div>

@@ -1,8 +1,11 @@
 body {
-    font-family: /* 1 */
-    -apple-system, BlinkMacSystemFont, /* 2 */
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", /* 3 */
-    "Helvetica Neue", sans-serif;
+    font-family:
+        /* 1 */
+        -apple-system, BlinkMacSystemFont,
+        /* 2 */
+        "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        /* 3 */
+        "Helvetica Neue", sans-serif;
     font-size: 16pt;
     line-height: 1.5;
     color: #333;
@@ -52,7 +55,7 @@ body {
     align-content: center;
 }
 
-.session-actions{
+.session-actions {
     height: 40px;
     width: 100%;
     position: relative;
@@ -61,12 +64,12 @@ body {
     justify-content: flex-end;
 }
 
-.session-actions [type=radio]+label, 
-.session-actions [type=checkbox]+label{
+.session-actions [type=radio]+label,
+.session-actions [type=checkbox]+label {
     font-size: 1em;
 }
 
-.session-actions [type=checkbox]+label:before{
+.session-actions [type=checkbox]+label:before {
     border-color: #005c84;
 }
 
@@ -81,23 +84,14 @@ body {
     border-top: 16px solid #3498db;
     width: 120px;
     height: 120px;
-    -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
 }
 
 @keyframes spin {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -107,21 +101,8 @@ body {
 
 .animate-bottom {
     position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
     animation-name: animatebottom;
     animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
-    }
-    to {
-        bottom: 0px;
-        opacity: 1
-    }
 }
 
 @keyframes animatebottom {
@@ -129,6 +110,7 @@ body {
         bottom: -100px;
         opacity: 0
     }
+
     to {
         bottom: 0;
         opacity: 1
@@ -139,7 +121,7 @@ body {
 
 .navigation-panel::-webkit-scrollbar {
     display: none;
-    }
+}
 
 .navigation-panel {
     background: #005c84;
@@ -151,11 +133,7 @@ body {
     top: 100px;
     bottom: 0;
     padding-top: 6%;
-    -webkit-overflow-style: none;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
     overflow-style: none;
-    -moz-overflow-scrolling: touch;
-    -webkit-overflow-scrolling: touch;
     overflow-scrolling: touch;
     -ms-scroll-chaining: none;
     -ms-scroll-translation: vertical-to-horizontal;
@@ -194,9 +172,11 @@ body {
     .page-content {
         margin-left: 320px;
     }
+
     .session-detail {
         padding: 1%;
     }
+
     .navigation-panel {
         position: fixed;
         top: 100px;
@@ -204,6 +184,7 @@ body {
         transform: translateX(0);
         padding-top: 1%;
     }
+
     .page-content .card {
         width: 30%;
     }
@@ -227,10 +208,9 @@ body {
     padding-left: 3px;
     padding-left: 4px \9;
     margin-bottom: 0;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
-    width: 100%;
+    width: 90%;
+    margin-left: 4%;
 }
 
 .form-search button {
@@ -240,10 +220,8 @@ body {
     margin-top: 2px;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 8%;
     margin-bottom: 0;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
 }
 
@@ -264,7 +242,6 @@ body {
     border: 3px solid #fff;
     border-radius: 1px;
     margin-top: 2px;
-    -webkit-transition: .2s;
     transition: .2s;
 }
 
@@ -276,19 +253,13 @@ body {
     border-style: solid;
     border-width: 6px;
     border-color: transparent #28a745 #28a745 transparent;
-    -webkit-transform: rotate(40deg);
-    -ms-transform: rotate(40deg);
     transform: rotate(40deg);
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-transform-origin: 100% 100%;
-    -ms-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
 }
 
 input[type=radio],
 input[type=checkbox] {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
 }
@@ -316,10 +287,6 @@ input[type=checkbox] {
     height: 36px;
     line-height: 36px;
     font-size: 3em;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -ms-user-select: none;
     user-select: none;
 }
 

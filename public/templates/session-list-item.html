@@ -2,9 +2,14 @@
 <div class="card" id="{{id}}">
     <div class="card-body">
         <h5 class="card-title">{{title}}</h5>
-        <p class="card-text">{{speaker}} {{#badge}}<span class="badge badge-primary">{{.}}</span>{{/badge}}</p>
-        <p class="card-text">{{time}} - {{#room}}{{.}}{{/room}}{{^room}}TBD{{/room}}</p>
-        <a href="session/{{slug}}/" class="card-link btn btn-primary float-right">Details</a>
+        {{#speakers}}
+        <p class="session-text">
+            <img class="rounded-circle mugshot-md mr-2" src="{{{profilePicture}}}" alt="{{firstName}}
+                    {{lastName}}" /><a href="speaker/{{id}}/"><b>{{firstName}}
+                    {{lastName}}</b></a></p>
+        {{/speakers}}
+        <p class="card-text">{{time}} - {{#room}}{{name}}{{/room}}{{^room}}TBD{{/room}}</p>
+        <a href="session/{{id}}/" class="card-link btn btn-primary float-right">Details</a>
     </div>
 </div>
 {{/sessions}}

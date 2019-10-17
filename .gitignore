@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+/public/api/sessions
+/public/api/speakers

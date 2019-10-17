@@ -11,6 +11,12 @@
     "private": true,
     "devDependencies": {
         "http-server": "*",
-        "mustache": "*"
+        "mustache": "*",
+        "del": "~3.0.0",
+        "generate-schema": "*",
+        "glob": "^7.1.4",
+        "ping_bing": "*",
+        "ncp": "*",
+        "strip-bom": "*"
     }
 }

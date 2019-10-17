@@ -1,11 +1,14 @@
 <div class="session-detail">
     <h1 class="session-title">{{title}}</h1>
     <div class="session-details-container">
+        {{#speakers}}
         <p class="session-text">
-            <b>{{speaker}}</b> {{#badge}}
-            <span class="badge badge-primary">{{.}}</span>{{/badge}}</p>
+            <img class="rounded-circle mugshot-md mr-2" src="{{{profilePicture}}}" alt="{{firstName}}
+                    {{lastName}}" /><a href="speaker/{{id}}/"><b>{{firstName}}
+                    {{lastName}}</b></a></p>
+        {{/speakers}}
         <p class="session-text">
-            <b>{{time}} - {{#room}}{{.}}{{/room}}{{^room}}TBD{{/room}}</b>
+            <b>{{time}} - {{#room}}{{name}}{{/room}}{{^room}}TBD{{/room}}</b>
         </p>
     </div>
     <div class="session-actions">
@@ -13,5 +16,5 @@
         <label for="cb{{id}}" value="{{id}}" class="big-check">Schedule</label>
     </div>
     <div class="session-description">
-        {{{body}}}</div>
+        {{{description}}}</div>
 </div>

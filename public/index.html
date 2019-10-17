@@ -10,7 +10,7 @@
     <link href="css/app/site.css" rel="stylesheet">
     <title>Philly Code Camp Schedule</title>
     <meta name="description" content="Find the Sessions You Want at the 2018 Philly Code Camp">
-    <meta name="theme-color" content="#000066"/>
+    <meta name="theme-color" content="#000066" />
 
     <!-- Mobile Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -130,37 +130,36 @@
     <script type="script-polyfil" id="polyfilfetch" src="js/libs/polyfils/fetch.js"></script>
 
     <script>
-
         //wrap in IIFE to keep out of global scope
-        (function () {
+        ( function () {
 
-            function toggleScript(id) {
+            function toggleScript( id ) {
 
-                var target = document.getElementById("polyfil" + id);
+                var target = document.getElementById( "polyfil" + id );
 
-                target.setAttribute("type", "text/javascript");
-
-            }
-
-            if (typeof Object.assign != 'function') {
-
-                toggleScript("assign");
+                target.setAttribute( "type", "text/javascript" );
 
             }
 
-            if (typeof Promise === "undefined" || Promise.toString().indexOf("[native code]") === -1) {
+            if ( typeof Object.assign != 'function' ) {
 
-                toggleScript("promise");
-
-            }
-
-            if (typeof fetch === "undefined" || fetch.toString().indexOf("[native code]") === -1) {
-
-                toggleScript("fetch");
+                toggleScript( "assign" );
 
             }
 
-        }());
+            if ( typeof Promise === "undefined" || Promise.toString().indexOf( "[native code]" ) === -1 ) {
+
+                toggleScript( "promise" );
+
+            }
+
+            if ( typeof fetch === "undefined" || fetch.toString().indexOf( "[native code]" ) === -1 ) {
+
+                toggleScript( "fetch" );
+
+            }
+
+        }() );
     </script>
 
     <script src="js/libs/utils.js"></script>

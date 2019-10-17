@@ -1,4 +1,4 @@
-var ccSessions = (function () {
+var ccSessions = ( function () {
 
     var sessionTimesKey = "session-times",
         savesSessions = "save-sessions";
@@ -15,19 +15,19 @@ var ccSessions = (function () {
 
             var self = this;
 
-            return fetch("api/philly-cc-schedule.json")
-                .then(function (response) {
+            return fetch( "https://sessionize.com/api/v2/z6qqazzx/view/all" )
+                .then( function ( response ) {
 
-                    if (response.ok) {
+                    if ( response.ok ) {
 
                         return response.json()
-                            .then(function (sessions) {
+                            .then( function ( sessions ) {
 
                                 self.campSchedule = sessions;
 
                                 return sessions;
 
-                            });
+                            } );
 
 
                     } else {
@@ -35,107 +35,107 @@ var ccSessions = (function () {
                         throw "session fetch failed";
                     }
 
-                });
+                } );
 
         },
 
-        saveSession: function (id) {
+        saveSession: function ( id ) {
 
             var self = this;
 
-            return this.getSessionById(id)
-                .then(function (session) {
+            return this.getSessionById( id )
+                .then( function ( session ) {
 
                     return self.getSavedSessions()
-                        .then(function (sessions) {
+                        .then( function ( sessions ) {
 
                             sessions = sessions || [];
 
                             //this can stack up duplicates so need to fix...but I am tired.
-                            sessions.push(session);
+                            sessions.push( session );
 
-                            return localforage.setItem(savesSessions, sessions);
+                            return localforage.setItem( savesSessions, sessions );
 
-                        });
+                        } );
 
-                });
+                } );
 
         },
 
-        removeSession: function (id) {
+        removeSession: function ( id ) {
 
             var self = this;
 
             return this.getSavedSessions()
-                .then(function (sessions) {
+                .then( function ( sessions ) {
 
-                    if (sessions.length > 0) {
+                    if ( sessions.length > 0 ) {
 
-                        sessions = sessions.filter(function (session) {
+                        sessions = sessions.filter( function ( session ) {
 
                             return session.id != id;
 
-                        });
+                        } );
 
-                        return localforage.setItem(savesSessions, sessions);
+                        return localforage.setItem( savesSessions, sessions );
 
                     }
 
-                });
+                } );
 
         },
 
-        getSessionById: function (id) {
+        getSessionById: function ( id ) {
 
-            id = parseInt(id, 10);
+            id = parseInt( id, 10 );
 
             return this.getSessions()
-                .then(function (sessions) {
+                .then( function ( sessions ) {
 
-                    var _s = sessions.filter(function (session) {
+                    var _s = sessions.filter( function ( session ) {
 
                         return session.id === id;
 
-                    });
+                    } );
 
-                    if (_s && _s.length > 0) {
+                    if ( _s && _s.length > 0 ) {
 
-                        return _s[0];
+                        return _s[ 0 ];
 
                     } else {
                         return undefined;
                     }
 
-                });
+                } );
 
         },
 
-        searchSessions: function (term) {
+        searchSessions: function ( term ) {
 
             var self = this;
 
             term = term.toLowerCase();
 
-            return new Promise(function (resolve, reject) {
+            return new Promise( function ( resolve, reject ) {
 
-                var results = self.campSchedule.filter(function (session) {
+                var results = self.campSchedule.filter( function ( session ) {
 
-                    return ((session.title.toLowerCase().indexOf(term) > -1 ||
-                            session.body.toLowerCase().indexOf(term) > -1 ||
-                            session.speaker.toLowerCase().indexOf(term) > -1) &&
-                        session.date.indexOf("2018-03-24") > -1);
+                    return ( ( session.title.toLowerCase().indexOf( term ) > -1 ||
+                            session.body.toLowerCase().indexOf( term ) > -1 ||
+                            session.speaker.toLowerCase().indexOf( term ) > -1 ) &&
+                        session.date.indexOf( "2018-03-24" ) > -1 );
 
-                });
+                } );
 
-                resolve(results);
+                resolve( results );
 
-            });
+            } );
 
         },
 
         getSavedSessions: function () {
 
-            return localforage.getItem(savesSessions);
+            return localforage.getItem( savesSessions );
 
         },
 
@@ -143,69 +143,69 @@ var ccSessions = (function () {
 
             var self = this;
 
-            return localforage.getItem(sessionTimesKey)
-                .then(function (times) {
+            return localforage.getItem( sessionTimesKey )
+                .then( function ( times ) {
 
-                    if (!times) {
+                    if ( !times ) {
 
-                        return self.updateSessionTimes(self.selectedTimes)
-                            .then(function () {
+                        return self.updateSessionTimes( self.selectedTimes )
+                            .then( function () {
 
                                 return self.selectedTimes;
 
-                            });
+                            } );
 
                     }
 
                     return times;
 
-                });
+                } );
 
         },
 
-        addSessionTime: function (sessionTime) {
+        addSessionTime: function ( sessionTime ) {
 
             var self = this;
 
             return self.getSelectedTimes()
-                .then(function (times) {
+                .then( function ( times ) {
 
-                    times.push(sessionTime);
+                    times.push( sessionTime );
 
-                    return self.updateSessionTimes(times);
+                    return self.updateSessionTimes( times );
 
-                });
+                } );
 
         },
 
-        removeSessionTime: function (sessionTime) {
+        removeSessionTime: function ( sessionTime ) {
 
             var self = this;
 
             return self.getSelectedTimes()
-                .then(function (times) {
+                .then( function ( times ) {
 
-                    times = times.filter(function (time) {
+                    times = times.filter( function ( time ) {
 
                         return time != sessionTime;
 
-                    });
+                    } );
 
-                    return self.updateSessionTimes(times);
+                    return self.updateSessionTimes( times );
 
-                });
+                } );
 
         },
 
-        updateSessionTimes: function (times) {
+        updateSessionTimes: function ( times ) {
 
-            return localforage.setItem(sessionTimesKey, times);
+            return localforage.setItem( sessionTimesKey, times );
 
         },
 
         getSessionTimes: function () {
 
-            return localforage.getItem(sessionTimesKey);
+            return localforage.getItem( sessionTimesKey );
 
         },
 
@@ -214,20 +214,20 @@ var ccSessions = (function () {
             var self = this;
 
             return self.getSelectedTimes()
-                .then(function (times) {
+                .then( function ( times ) {
 
-                    return self.campSchedule.filter(function (session) {
+                    return self.campSchedule.filter( function ( session ) {
 
-                        return times.indexOf(session.time) > -1;
+                        return times.indexOf( session.time ) > -1;
 
-                    });
+                    } );
 
-                });
+                } );
 
         }
 
-    }
+    };
 
     return ccSessions;
 
-})();
+} )();

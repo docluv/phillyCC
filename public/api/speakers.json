@@ -1,0 +1,574 @@
+[ {
+    "id": "52a0131c-ee9b-499e-9ff4-9c448ade8424",
+    "firstName": "Alexander",
+    "lastName": "Slotte",
+    "bio": "Originally from Sweden, Alexander has 10+ years of professional software development experience, solving problems for a wide range of industries. He currently works as a Lead Consultant at Excella, and is the organizer of the .NET DC User group. He thoroughly enjoys speaking at international and domestic conferences. He is passionate about .NET and cloud development and constantly attempts to push his knowledge on real time data streaming, data science and machine learning. When not coding, you'll find him out running or enjoying a good IPA! Say hi on Twitter @alexslotte!",
+    "tagLine": "Lead Consultant, Excella",
+    "profilePicture": "https://sessionize.com/image?f=a920587bf5fe42fbcdb5813414f5c293,400,400,True,False,1c-ee9b-499e-9ff4-9c448ade8424.2b08f179-48b7-4850-8809-ab7cea21d951.jpg",
+    "isTopSpeaker": true,
+    "links": [],
+    "sessions": [ {
+        "id": "140268",
+        "title": "Machine Learning <3 Real-Time Stream Analytics"
+    }, {
+        "id": "148509",
+        "title": "Building Deep Neural Networks in .NET"
+    } ],
+    "fullName": "Alexander Slotte",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "7fd4d064-5f89-4a26-b844-571c1c49bc04",
+    "firstName": "André",
+    "lastName": "Barnes",
+    "bio": "André Barnes is a consultant with over 20 years experience within the Microsoft and .NET ecosystems,  strives to write clean code and solve hard problems as simply as possible.  Always looking to accelerate the pace of learning, he believes that learning is the super power that should be mastered. When he does not have his nose stuck in the computer, he is off traveling somewhere with his nose stuck in the computer with a better background. The social media handle in most places is @aqbhectic.  Reach out.",
+    "tagLine": "Developer Consultant",
+    "profilePicture": "https://sessionize.com/image?f=e6c2e8b1989134186648f4a6ff5fe8e0,400,400,True,False,64-5f89-4a26-b844-571c1c49bc04.b33ab83f-180d-4979-abb5-20b15b4cfb71.jpeg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "149398",
+        "title": "After you commit"
+    } ],
+    "fullName": "André Barnes",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "7c24563d-3404-4efc-b6ac-95268eaaa792",
+    "firstName": "Avi",
+    "lastName": "Farah",
+    "bio": "I have been a .Net developer since the inception of .Net but more importantly I’ve crossed the aha moment in understanding monads ",
+    "tagLine": "VP ",
+    "profilePicture": "https://sessionize.com/image?f=8013f9644ffd0aae190c1ebf13b38e1c,400,400,True,False,3d-3404-4efc-b6ac-95268eaaa792.8f45d409-0081-451b-badb-603a447b0fd5.jpeg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "148204",
+        "title": "Monads in C#"
+    } ],
+    "fullName": "Avi Farah",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "4c7d728c-d026-4e86-b8a3-28a67e8409ec",
+    "firstName": "Bill",
+    "lastName": "Wolff",
+    "bio": "Bill Wolff is an independent consultant, trainer, and architect specializing in Microsoft development technologies under the name Agility Systems. He served as the SharePoint Practice Director at Capax Global, Solutions Architect in the Microsoft Practice at Unisys Corporation, and ran the Microsoft Alliance at LiquidHub. He ran the consulting firm Wolff Data Systems for 15 years and directed armies of consultants in the dot com world. Bill is founder and President of the philly.NET user group, a previous INETA board member where he served as Vice President of the Speaker Bureau, and involved in several other user communities. Bill was a contributing author on several books. His certifications include trainer, systems engineer, developer, and Microsoft MVP.",
+    "tagLine": "Community hero",
+    "profilePicture": "https://sessionize.com/image?f=e69ec584a425c81ff8ad9a6f8f36c916,400,400,True,False,8c-d026-4e86-b8a3-28a67e8409ec.274d34c0-4a96-4953-b2f0-6854719beb7b.jpg",
+    "isTopSpeaker": true,
+    "links": [],
+    "sessions": [ {
+        "id": "127942",
+        "title": "ASP.NET Core + Blazor"
+    }, {
+        "id": "127943",
+        "title": "From Razor to Blazor with ASP.NET Core"
+    } ],
+    "fullName": "Bill Wolff",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "829ddcdb-5c28-48f2-93a0-9ef79ad3fb8c",
+    "firstName": "Brian",
+    "lastName": "Minisi",
+    "bio": "Brian Minisi is a Principal Consultant for Neudesic.  A Microsoft MVP and ALM Ranger, Brian is a frequent speaker at code camps and user groups. He is also an organizer of the Philly ALM User Group and the Philly Azure User Group.  Brian is also a board member of the TechBash conference held in the Poconos each year.  He has been working with Microsoft technologies since 1998 and has been working in .NET since 2001. He is passionate about architecture and all aspects of the application lifecycle, cloud and DevOps. ",
+    "tagLine": "Neudesic, Principal Consultant",
+    "profilePicture": "https://sessionize.com/image?f=d92ca89451b086011654e38696506a06,400,400,True,False,db-5c28-48f2-93a0-9ef79ad3fb8c.6cd4e3bf-1453-45c0-92c7-245415a66553.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "151562",
+        "title": "Pipeline Infrastructure Automation with Terraform and ARM"
+    } ],
+    "fullName": "Brian Minisi",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "2ebd8578-298f-45ae-b71b-dc076037b080",
+    "firstName": "Chris",
+    "lastName": "Ayers",
+    "bio": "Chris is a Dev Ops consultant and full-stack Software Developer with a focus in modern applications built with Single Page Apps, RESTful APIs, and cloud technologies following agile practices.  Throughout his career, Chris has tried to follow industry best practices and standards.  Earlier in his career, he had lots of experience with security, infrastructure, and networking.  Focusing on Dev Ops ties all of the different roles together.  In his free time, Chris is a speaker at numerous meetups, an avid reader and a gamer.",
+    "tagLine": "An Azure / DevOps Consultant",
+    "profilePicture": "https://sessionize.com/image?f=5874520e99c379cfef3a77c50af907e6,400,400,True,False,870feacd-76a6-41ce-b114-d42b54cda316.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "151257",
+        "title": "Automate Azure DevOps"
+    }, {
+        "id": "151258",
+        "title": "ASP.Net Core - Shift Left and Start Out Right"
+    } ],
+    "fullName": "Chris Ayers",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "346354cb-450d-4c59-82a5-d51e558e10ee",
+    "firstName": "Chris",
+    "lastName": "Camac",
+    "bio": "Chris is a senior software developer at Miles Technologies working with the NGIN team creating templates and tooling for use by Miles dev teams.  He has a passion for working with Angular and creating robust tooling for his fellow devs.  He also serves as the Angular go-to-guy for his division.\r\n\r\nPrior to working on templates, tooling, and components in Angular, Chris spent several years developing a fully featured web based ERP system which used a blend of .NET and KnockoutJS.  In that system, he was one of the main developers for the accounting and inventory systems, including integrations to financial institutions.",
+    "tagLine": "Senior Software Developer at Miles Technologies",
+    "profilePicture": "https://sessionize.com/image?f=da563bdf2553e5035a8b8d8d57edd8ef,400,400,True,False,7534ee09-9c8f-4d6c-a1f8-5c8fa296f3f8.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "131929",
+        "title": "D.R.Y. out your Angular Apps"
+    } ],
+    "fullName": "Chris Camac",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "1cb98784-8312-40db-a306-4460db7eec7e",
+    "firstName": "Chris",
+    "lastName": "Gomez",
+    "bio": "Chris is a software developer who loves to share what he's learned with everyone.  A Microsoft MVP, Chris regularly discusses topics such as ASP.NET, Game development, Cloud development and how to grow as a developer at user groups, conferences, and the Static Void Podcast (www.staticvoidpodcast.com)",
+    "tagLine": "Microsoft MVP",
+    "profilePicture": "https://sessionize.com/image?f=c274715514612c543d7501ef21383468,400,400,True,False,1cfbfa77-1553-4412-8845-ebf06091e819.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "148107",
+        "title": "Cure your fear of Git in about an hour"
+    } ],
+    "fullName": "Chris Gomez",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "a4a9956a-c20d-4835-ac11-d403d22dbd83",
+    "firstName": "Chris",
+    "lastName": "Love",
+    "bio": "Chris Love is a front-end developer for people and companies who are lost in the sea of modern web and user experience standards. He has a quarter century of web development experience, and has built a wide variety of web sites and applications in those years. In recent years, he immersed himself in progressive web applications and web performance optimization.\r\n\r\nHe applies these interests to run a small web consulting company, Love2Dev, that focuses on Progressive Web Applications and modern web technology. Love2Dev offers web development and analysis to help companies engage end users and operate more efficiently.\r\n\r\nChris authored 3 web development books including, High Performance Single Page Web Applications, http://amzn.to/1b0twcm. He is currently authoring a new Progressive Web App book for Packt, due out this Fall.\r\n\r\nHe is a 10 time Microsoft MVP in ASP.NET and Web Platform. Chris regularly speaks at user groups, code camps and developer conferences. He blogs at http://love2dev.com and is active on Twitter, @ChrisLove.\r\n\r\nThrough his blog, speaking and books, he’s here to help you shake up your approach to web development while making it all feel like fun. His insights and opinions have been featured in various magazines, popular podcasts web sites. He has helped hundreds of businesses and individuals, ranging from mom and pop shops through major corporate brands, to build modern web experiences.\r\n\r\nWhen he’s not working on front-end development, you can find him spending time with his step-kids, learning karate, training for Spartan races and serving on his church board of directors.\r\n\r\nYou can follow Chris' Blog at https://love2dev.com/blog/ and on Twitter @ChrisLove.\r\n",
+    "tagLine": "An Advocate for the Web!",
+    "profilePicture": "https://sessionize.com/image?f=52cbede2da9b727335693e89221b501c,400,400,True,False,6a-c20d-4835-ac11-d403d22dbd83.be2e8439-2edc-4e98-bcd5-44e61ebb72ab.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "155928",
+        "title": "Starting Progressive Web Applications"
+    } ],
+    "fullName": "Chris Love",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "2a3311e1-493c-4e5e-9859-8d5987709e46",
+    "firstName": "Daniel",
+    "lastName": "Colón",
+    "bio": "Daniel has expertise in infrastructure, internet technologies, and systems integration obtained through 20 plus years of working as a manager, architect and developer on projects for mission critical back end systems that have included various cloud platforms such as SoftLayer, AWS and Azure. He has taught various courses at Northeastern University including ASP.NET, C#, and XML Web Services. He has various certifications including A+, Security+, MCSE: Cloud Platform and Infrastructure",
+    "tagLine": "Consultant",
+    "profilePicture": "https://sessionize.com/image?f=a7010bce363818cc89e8c1f3b48d7b32,400,400,True,False,e1-493c-4e5e-9859-8d5987709e46.a9188bdd-dadc-4f12-9858-26b8f5c868c8.png",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "143181",
+        "title": "Infrastructure as Code with TerraForm"
+    }, {
+        "id": "143180",
+        "title": "Azure API Management"
+    } ],
+    "fullName": "Daniel Colón",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "294ce2a4-19e7-43c7-a374-3ee4711a1d53",
+    "firstName": "Dave",
+    "lastName": "Wentzel",
+    "bio": "Dave is an ex-MSFT Solution Architect and currently the CTO of Capax Global.  Dave helps customers on their big data and cloud journey.  Prior to Capax and MSFT Dave was the lead architect for a healthcare information management company and worked for a number of ISVs.  ",
+    "tagLine": "CTO of Capax Global",
+    "profilePicture": "https://sessionize.com/image?f=b34ad3f7e62e65f5555435208ec56fa5,400,400,True,False,32565c45-e121-41de-bbfd-f026fe65b68a.jpg",
+    "isTopSpeaker": true,
+    "links": [],
+    "sessions": [ {
+        "id": "128234",
+        "title": "End to End Big Data Workshop"
+    }, {
+        "id": "128235",
+        "title": "Notebooks Everywhere:  Using Jupyter and Notebooks for your day-to-day tasks"
+    } ],
+    "fullName": "Dave Wentzel",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "33220779-c585-457d-9f49-0154d6b90b02",
+    "firstName": "David",
+    "lastName": "Horvath, CCP",
+    "bio": "•\tDavid is an IT Professional who has worked with a wide variety of platforms over the years with a variety of development and analysis tools. \r\n•\tThis is not his first philly.net session and far from his first presentation – having presented workshops and seminars in Australia, France, the US, Canada, and Oxford England (about the British Author Nevil Shute).\r\n•\tHis undergraduate is in Computer and Information Sciences from Temple University and holds a Masters in Organizational Dynamics from UPENN. He holds the Certified Computing Professional designation.\r\n•\tMost of his career has been in consulting (although recently he has been in house) in the Philadelphia PA area. \r\n•\tHe has several books to his credit (none directly Windows related) and is an Adjunct Instructor covering IT topics.\r\n",
+    "tagLine": "IT Weanie",
+    "profilePicture": "https://sessionize.com/image?f=40cbb18c27eb2cdc968c17be3ccdf9bf,400,400,True,False,704e6346-e3f4-4260-83c2-ff29fce1a3e7.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "140292",
+        "title": "Thinking outside the box: Leveraging \"UNIX Tools\" (GNU) for Data Analysis and Validation"
+    } ],
+    "fullName": "David Horvath, CCP",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "1fb25ae7-3226-4bf5-9c79-aa600340a2d1",
+    "firstName": "David",
+    "lastName": "Patrick",
+    "bio": "Dave has been developing database applications for over 25 years. An MCT since 2001, he has taught many classes from Intro to Visual Interdev to Advanced SharePoint Development. Dave attained MVP status in 2009 and again in 2018 and runs four user groups, the Maryland and Pennsylvania Microsoft Developers User Group, www.mapamdug.com, MAD SharePoint, www.madsharepoint.com, the Mid Atlantic Cybersecurity Experts MeetUp, www.meetup.com/MACEME, and the Baltimore Cloud Meetup, www.meetup.com/Baltimore-Cloud. \r\n\r\nDave does SharePoint training and development for DSA, Inc., a DoD contractor that does great work for the Army over at Aberdeen Proving Ground. Dave has a bunch of certifications, including the new MCSD SharePoint Apps Developer, the MSCE for SharePoint, and even the old MCP DEAD certification.",
+    "tagLine": "MCT, MCSD, MCSE",
+    "profilePicture": "https://sessionize.com/image?f=82009246a6ef4fb6770157e1b585ae5b,400,400,True,False,c7e15dc4-2bea-4cfd-b8f2-41ab48f8953f.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "126326",
+        "title": "Intro to Azure"
+    } ],
+    "fullName": "David Patrick",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "9d1df273-dafa-4498-b2a4-18fcf513d363",
+    "firstName": "Graham",
+    "lastName": "Murray",
+    "bio": "Graham is a software architect and author. He builds high performance cross-platform UI components for Infragistics, spanning desktop, web, and mobile. Reach him @the_graham",
+    "tagLine": "Senior Product Architect at Infragistics",
+    "profilePicture": "https://sessionize.com/image?f=fcf0a6f73e832139859379c893310f33,400,400,True,False,73-dafa-4498-b2a4-18fcf513d363.c739da69-b8aa-4ac8-ab3f-553efbaeb111.png",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "146779",
+        "title": "TypeScript will fix your broken web app."
+    } ],
+    "fullName": "Graham Murray",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "e0003920-edbc-42ef-9658-ccb52d6f5083",
+    "firstName": "Jason",
+    "lastName": "van Brackel",
+    "bio": "Jason van Brackel is the Director of Community for Rancher Labs. Currently focused on DevOps, Jason assists open source Kubernetes and Rancher users to make the most of their development and infrastructure investments.  He is also the organizer of the Philadelphia Kubernetes Meetup and loves teaching at code camps, user groups and meetups.",
+    "tagLine": "Continuously Caffeinated Sr. Solutions Architect @ Rancher",
+    "profilePicture": "https://sessionize.com/image?f=13d3eedfe9fc3d2697d15bbc3d65e965,400,400,True,False,a3c50150-63cb-4bac-9735-4addd011a0d8.jpg",
+    "isTopSpeaker": true,
+    "links": [],
+    "sessions": [ {
+        "id": "126332",
+        "title": "Contain Your Enthusiam - A Full Day with Containers and Kubernetes"
+    }, {
+        "id": "126334",
+        "title": "Introduction to Kubernetes with Azure Container Service (AKS)"
+    }, {
+        "id": "126338",
+        "title": "Becoming a Confident Meetup Organizer in 8 Easy Years: A Reluctant Introvert's Guide"
+    } ],
+    "fullName": "Jason van Brackel",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "9f18b163-3d9b-4e5a-b77f-99271a2a9afe",
+    "firstName": "Jess",
+    "lastName": "Chadwick",
+    "bio": "Jess Chadwick is a Lynda.com/LinkedIn Learning author, host of the Static Void Podcast, founding board member of the TechBash developer conference, and dev manager and architect at one of the two largest banks in the US.  But, more importantly, he's a coder with over 20 years of experience of writing and actually shipping software with a variety of teams in a variety of environments from 2-person startups to 200,000-person enterprises.",
+    "tagLine": "Technologist, Teacher, Author, and Agilist",
+    "profilePicture": "https://sessionize.com/image?f=cfaf701715f4890563424a8d86d2d67e,400,400,True,False,c2bdf6a9-c516-4c2c-a32c-235a7ab2d7ee.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "150123",
+        "title": "Getting Started with React"
+    }, {
+        "id": "150125",
+        "title": "TypeScript:  JavaScript Evolved"
+    }, {
+        "id": "150124",
+        "title": "JavaScript Quiz Show"
+    } ],
+    "fullName": "Jess Chadwick",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "a65fb016-4bf2-4c1d-9843-5a752f827017",
+    "firstName": "John",
+    "lastName": "Graham",
+    "bio": "After a 10 year career in sales I decided to pursue my passion for technology.  I started with Miles Technologies as a member of the Software Support team.  During my time doing customer support for our applications I wanted to dive deeper into my understanding of the technologies that build the applications I was supporting.  I spent several months consuming all forms of Development training applications and online courses to teach myself how to program.  Shortly after I transitioned into a developer role and continued my learning path.  I worked for several years progressing to Senior and eventually a developer lead.  I was more and more interested in automation and efficiency which drove me towards our Engineering team.  Looking for a new challenge I transitioned to this team that is focused solely on automation and efficiency improvements.  After a year of experience within the team I assumed the director role.  My responsibilities now are focused on keeping our engineering team members growing and doing the work that they do best.  I'm also involved in the design and architecture processes for our internal tools and processes.  My current passions are focused on joining our company efforts with the greater developer community.  I want to take skills and knowledge from the community and share things that have worked well for us with everyone.  ",
+    "tagLine": "Director of Software Engineering at Miles Technologies",
+    "profilePicture": "https://sessionize.com/image?f=a6b9202613d3c797ae15f65c082be105,400,400,True,False,16-4bf2-4c1d-9843-5a752f827017.c0be2675-1f1f-4470-8392-9d3ac6c3b9c1.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "131929",
+        "title": "D.R.Y. out your Angular Apps"
+    } ],
+    "fullName": "John Graham",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "2a59b520-4946-4682-a056-d3d24dae0b7a",
+    "firstName": "John",
+    "lastName": "Iwasz",
+    "bio": "John has 25+ years in software engineering and architecture, twelve of which were spent at Microsoft. He recently cofounded Whetstone Technologies, a start up focused on voice applications for healthcare solutions.",
+    "tagLine": "CTO Whetstone Technologies",
+    "profilePicture": "https://sessionize.com/image?f=6fb8731ce0a7f8e7d6e866fdb2133aeb,400,400,True,False,20-4946-4682-a056-d3d24dae0b7a.21c74c8a-57cc-44f3-a535-61e53c4df061.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "140901",
+        "title": "Reuse or Rework? Making the Connection Between Amazon Alexa Skills and Google Actions"
+    } ],
+    "fullName": "John Iwasz",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "2f6192ef-f5ff-4348-9142-c755c1e0a174",
+    "firstName": "Joshua",
+    "lastName": "Feierman",
+    "bio": "After spending years on the ground in various positions in technology, including as a DBA and developer (an odd combo that one...), Josh now leads the Technology Operations group at local company Gateway Ticketing Systems, where his team supports a large Azure based environment spanning three continents. He loves working with new technologies and has been known to use his home network as a proving ground, much to the pleasure of his wife and two young kids.",
+    "tagLine": "Manager of Technology Operations at Gateway Ticketing",
+    "profilePicture": "https://sessionize.com/image?f=25e5f04529f3d299b1ee4981c8d62594,400,400,True,False,ef-f5ff-4348-9142-c755c1e0a174.00acd96b-a7e2-4f5d-b918-4d3e4fc65c4e.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "140935",
+        "title": "Tuning SQL Server Queries With Science!"
+    }, {
+        "id": "140936",
+        "title": "Geeking out with Raspberry Pi, k3s, and Azure: How our pet lizard helped me learn new things"
+    } ],
+    "fullName": "Joshua Feierman",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "fe60954c-9d1a-4167-9faa-77027c8d446b",
+    "firstName": "Kendall",
+    "lastName": "Miller",
+    "bio": "Kendall Miller is the CEO of Gibraltar Software, the developers of Loupe, VistaDB and Visual ReCode for .NET and Java developers.  As a software engineer now running an international company, Kendall focuses on system scalability, usability and user experience.\r\n\r\nBefore starting Gibraltar Software, Kendall worked for multiple startups leading their technology development from beginning through profitability. In each case he's focused on translating enterprise-level performance and capabilities down to smaller companies. \r\n\r\nKendall has a B.S in Computer Engineering from the University of Illinois, Urbana-Champaign.",
+    "tagLine": "Gibraltar Software",
+    "profilePicture": "https://sessionize.com/image?f=07aefc79c8518c41d01aadae70aec7b8,400,400,True,False,9f8a77f6-1ffa-4eff-895b-18d4ba7e7fcb.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "148866",
+        "title": "How not to be the best app no one uses: Effective Onboarding for fun & profit"
+    }, {
+        "id": "148867",
+        "title": "Real World UX Problem Solving"
+    } ],
+    "fullName": "Kendall Miller",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "a656382d-7b56-41a1-8260-daa9f34be030",
+    "firstName": "Mahesh",
+    "lastName": "Chand",
+    "bio": "CEO of Mindcracker Inc. Founder of C# Corner. Mahesh is an award-winning Software Architect and Author with 20 years of software development experience in building complete solutions using cutting-edge technologies.  Mahesh is also a Microsoft Regional Director, 14-times Microsoft MVP, Founder of C# Corner, International Speaker, Author, Software Architect, and Startup Adviser. ",
+    "tagLine": "Founder C# Corner",
+    "profilePicture": "https://sessionize.com/image?f=7259297a1ed6014fab69050fdca94800,400,400,True,False,2d-7b56-41a1-8260-daa9f34be030.73106570-4d39-4268-8049-1c6b54827525.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "131880",
+        "title": "Build A Self Sustaining Software Consulting"
+    } ],
+    "fullName": "Mahesh Chand",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "113054cf-dd92-49fd-b170-e1d221c787cb",
+    "firstName": "Michael",
+    "lastName": "Montgomery",
+    "bio": "Michael ‘Monty’ Montgomery is an accomplished \"roll up your sleeves\" software architect and expert developer. He is also a master architect and seasoned trainer with the software architecture firm IDesign. Monty is a recognized industry expert in microservice architecture and Azure Service Fabric. He leverages both to help his clients conceive, design, build and successfully deliver innovative microservice systems. \r\n\r\nMonty conducts IDesign’s unique Architecture and Detailed Design Clinics, which are intense, immersive, hands-on system design and career invigorating experiences. Monty also leads IDesign’s new Service Fabric Master Class, a must for modern developers and architects. Monty co-authored the 4th Edition of Programming WCF Services with Juval Lowy and published many articles on architecture always sharing his unique ‘From the Field’ perspective. His latest article, ‘Escaping Appland’ has received international attention for its insightful contrarian point of view.  Monty speaks regularly at .NET and industry related events around the world.",
+    "tagLine": "IDesign Master Architect, Microservice Madman",
+    "profilePicture": "https://sessionize.com/image?f=10cbb0432293b5818a486bbafc67b1c7,400,400,True,False,cf-dd92-49fd-b170-e1d221c787cb.15f28270-dee0-4d9d-9823-8f396ea240e9.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "140506",
+        "title": "Learn to Program Azure Service Fabric"
+    } ],
+    "fullName": "Michael Montgomery",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "cc3e3486-dccf-4fbd-82f6-5b530792f2e0",
+    "firstName": "Mike",
+    "lastName": "Melusky",
+    "bio": "Mike Melusky is a software developer for Audacious Inquiry in Baltimore, MD. He is also an adjunct faculty member for Penn State University and Franklin Marshall college. He has an XBOX One X.",
+    "tagLine": "write something funny like 'ninja' :-)",
+    "profilePicture": "https://sessionize.com/image?f=6d791c5a10191ec9f7a0cb9d840d757e,400,400,True,False,86-dccf-4fbd-82f6-5b530792f2e0.55ec2a17-c96e-435a-8053-0e74e286277f.png",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "149219",
+        "title": "Containerize all the things"
+    } ],
+    "fullName": "Mike Melusky",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "c8398064-5fee-43ee-80f0-87245f770e92",
+    "firstName": "Nick",
+    "lastName": "Hodges",
+    "bio": "Nick Hodges is a Software Development Manager at Gateway Ticketing Systems. A long-time Delphi developer, he has recently turned his attention to TypeScript and Angular. \r\n \r\nNick has a BA in Classical Languages from Carleton College and an MS in Information Technology Management from the Naval Postgraduate School.  In his career he has been a busboy, a cook, a caddie, a telemarketer (for which he apologizes), an Office Manager, a high school teacher, a Naval Intelligence officer, a software developer, a product manager, and a software development manager. In addition, he is a former Delphi Product Manager and Delphi R&D Team Manager.  He's a passionate Minnesota sports fan -- especially the Timberwolves -- as he grew up and went to college in the Land of 10,000 Lakes.  He currrently lives with his family in Gilbertsville, PA.  \r\n",
+    "tagLine": "Software Development Manager at Gateway Ticketing Systems",
+    "profilePicture": "https://sessionize.com/image?f=de0fe097cc3a1db38d3e8fbd5215b5c3,400,400,True,False,902933fb-509a-475b-9764-ece89feabffa.jpg",
+    "isTopSpeaker": true,
+    "links": [],
+    "sessions": [ {
+        "id": "126939",
+        "title": "Angular 101: Angular from Start to Finish"
+    }, {
+        "id": "144825",
+        "title": "Routing in Angular"
+    }, {
+        "id": "144824",
+        "title": "Observables From the Ground Up"
+    } ],
+    "fullName": "Nick Hodges",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "5d670dc9-0751-4d1c-9f9e-bf52f032fb9d",
+    "firstName": "Ravi",
+    "lastName": "Okade",
+    "bio": "I am enjoying the IT journey and all its innovations, disruptions and the occasional hype. My seat belt is securely fastened for the next round.",
+    "tagLine": "High up in the cloud, not ready to come down",
+    "profilePicture": "https://sessionize.com/image?f=9e50793523129e7b6ba2b83da430c394,400,400,True,False,e2357b18-a8c8-4961-8f53-9b1b57e8ef3e.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "128625",
+        "title": "Azure Blockchain applications using Ethereum"
+    } ],
+    "fullName": "Ravi Okade",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "0b1ed5a2-b047-4868-bcb6-11b1bc918598",
+    "firstName": "Rich",
+    "lastName": "Ross",
+    "bio": "Rich Ross is Technology Architect at the Microsoft Technology Center (MTC) in Philadelphia. He spends much of his time talking to customers about their challenges, architecting Azure solutions and building innovative applications to showcase technologies. Rich has more than 25 years of business and IT experience in the pharmaceutical and healthcare industry. He is a contributor to many local user groups including Philly.net and TriState SharePoint. Rich also helps to organize and run Philly .net Code Camp, a bi-annual event for developers and businesses in the Mid-Atlantic area. ",
+    "tagLine": "Microsoft Technical Architect",
+    "profilePicture": "https://sessionize.com/image?f=034e91e1590a672bd2528ec00f693dd1,400,400,True,False,a2-b047-4868-bcb6-11b1bc918598.e0df2ecd-938c-4d91-a15e-e8aba8fea8b8.JPG",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "146659",
+        "title": "Azure DevOps Hands On"
+    } ],
+    "fullName": "Rich Ross",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "0633e6f6-02f3-4943-932a-b10e4bcbd17e",
+    "firstName": "Robert",
+    "lastName": "Keiser",
+    "bio": "Rob has over 30 years of experience developing software in one form or another. Rob is currently working as a Sr. Developer for HomeNet Automotive, a subsidiary of Cox Automotive. Rob has been an MVP since 2009 and also helps to run the Philly.NET user group. ",
+    "tagLine": "HomeNet Automotive",
+    "profilePicture": "https://sessionize.com/image?f=fa170bb51d9e42f3cd3d935716c36ed5,400,400,True,False,f6-02f3-4943-932a-b10e4bcbd17e.f6993425-2928-4f77-90c0-a15a2358af9e.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "142921",
+        "title": "Visual Studio Code Tips"
+    } ],
+    "fullName": "Robert Keiser",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "3fe9bb89-dec9-4586-8922-609e6ecbc355",
+    "firstName": "Sanjeev",
+    "lastName": "Surati",
+    "bio": "Sanjeev is originally from the Pacific Northwest and taught himself how to program computers in the late 1970’s at the age of 12.  He has a B.S. in Computer Science from Willamette University and has been in the software industry for over 30 years.  Highlights of his career include:\r\n\r\n- Lead Developer on Windows 2000 and WIndows XP (WMI Team)\r\n\r\n- Wrote an initial POC for software for an instant messaging application on Windows 95 that was later acquired by Microsoft Exchange and eventually became MSN Messenger.\r\n\r\n- In 2001 oversaw and wrote C-libraries to support the first implementation of Internet Explorer clients using SPNEGO and Kerberos to automatically authenticate to an Apache Web Server running on Unix.",
+    "tagLine": "CEO Whetstone Technologies",
+    "profilePicture": "https://sessionize.com/image?f=c11a86aa701613faee87fab19a9894a2,400,400,True,False,89-dec9-4586-8922-609e6ecbc355.65aef37b-4074-47f8-ab3b-1150d02179fd.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "140901",
+        "title": "Reuse or Rework? Making the Connection Between Amazon Alexa Skills and Google Actions"
+    } ],
+    "fullName": "Sanjeev Surati",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "bd579abe-0345-47d5-b61c-0cb2ea17df9e",
+    "firstName": "Sarah",
+    "lastName": "Patrick",
+    "bio": "Sarah has presented at several TechGirlz workshops for the Boys and Girls Club of Harford County, as an advocate for women in STEM. Sarah graduated from the Science and Mathematics Academy in Aberdeen, MD this past spring, where she presented her senior capstone project \"Engineering peer credibility via mastery of roles,\" where she designed roles for an ad hoc team. She worked with an army professional from CERDEC. She is currently attending the University of Maryland - College Park to major in Information Science. Sarah recently completed an internship with the Project Management Institute, helping them with their Professional Development Event.",
+    "tagLine": "Student",
+    "profilePicture": "https://sessionize.com/image?f=5946076627846cfa4277ecb463eef0e8,400,400,True,False,be-0345-47d5-b61c-0cb2ea17df9e.ff5c2253-9394-448c-b816-c0f0c507462d.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "128226",
+        "title": "Case Study: How I used SharePoint, Flow, PowerApps, and Forms to build a Speaker Database"
+    } ],
+    "fullName": "Sarah Patrick",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "11de651c-f46b-432a-8e66-4afb8bb9af77",
+    "firstName": "Scott",
+    "lastName": "Ocamb",
+    "bio": "Scott Ocamb is an independent consultant specializing in the agile and lean delivery of software. He has served as an Agile Coach and Scrum Master at numerous firms in the Delaware Valley.\r\n\r\nPrior to Scott's agile world, he was a Microsoft developer and architect using technology that dates back to the early days of .NET.",
+    "tagLine": "Creative Business Solutions - Agile Coach",
+    "profilePicture": "https://sessionize.com/image?f=175c5212d5087735e2e5a8ed33837209,400,400,True,False,1c-f46b-432a-8e66-4afb8bb9af77.0adecdc4-da63-4ec4-bc04-c668c34b49da.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "140576",
+        "title": "The Value of Agile"
+    } ],
+    "fullName": "Scott Ocamb",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "25d443b5-8438-486e-ad1f-879682672351",
+    "firstName": "Sofiya",
+    "lastName": "Lysenko",
+    "bio": "Inspired by women bioengineers at the 2015 ProjectCSGirls competition (where she prototyped an app to assist children with autism), she used her science fair project, a homemade gel electrophoresis device, and algorithms from Microsoft Azure Machine Learning Studio to predict the next mutation of the Zika virus for the 2016 ProjectCSGirls competition, where she won the 4th place national prize. She now focuses on expanding her independent research interests with aspirations of designing DNA robots and on educating and inspiring other girls. She has designed and run several workshop series in computer science, most recently the “You Can Code: Just For Girls” series in Fall 2017 and the \"Machine Learning with Microsoft Azure Machine Learning Studio\" workshop . She currently assists in professional scientific research.",
+    "tagLine": "Student",
+    "profilePicture": "https://sessionize.com/image?f=f62fa10549f241b14785c7775fc3f33e,400,400,True,False,e4147740-5f47-4962-8ed0-5d4595f649dd.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "153525",
+        "title": "Quantum Computing with Qiskit"
+    }, {
+        "id": "153523",
+        "title": "Machine Learning with Microsoft Azure Machine Learning Studio"
+    } ],
+    "fullName": "Sofiya Lysenko",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "1881c98b-0532-476b-906e-3b8c74f4935f",
+    "firstName": "Tim",
+    "lastName": "Corey",
+    "bio": "Professional software developer for over 20 years. \r\nMicrosoft MVP. \r\nSoftware Development Teacher who's goal is to make learning software development easier.\r\nYouTuber at https://youtube.com/IAmTimCorey",
+    "tagLine": "Software Development Trainer",
+    "profilePicture": "https://sessionize.com/image?f=bd9923c2a1d8bbb0fb739977dd584540,400,400,True,False,8b-0532-476b-906e-3b8c74f4935f.4489f377-c1c3-4d1f-a468-7da05490bd84.png",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "140257",
+        "title": "Use Azure DevOps to manage your entire development process"
+    }, {
+        "id": "140259",
+        "title": "Moving Desktop Apps to .NET Core 3.0"
+    } ],
+    "fullName": "Tim Corey",
+    "categoryItems": [],
+    "questionAnswers": []
+}, {
+    "id": "678c090d-d2d2-4825-8d8f-b832e30ea646",
+    "firstName": "Todd",
+    "lastName": "Snyder",
+    "bio": "Todd Snyder has been a software developer/architect for over 24 years. During that time, he has focused on providing technical guidance and leadership for the development of enterprise class systems on the Microsoft and Web Platforms.  He a passionate fan of Design Patterns, Principles and Software Craftsmanship. ",
+    "tagLine": "Life is a Journey",
+    "profilePicture": "https://sessionize.com/image?f=7d8ebb016a55106663e562f360703093,400,400,True,False,a30c46ec-d995-48a5-8fa7-119be864c608.jpg",
+    "isTopSpeaker": false,
+    "links": [],
+    "sessions": [ {
+        "id": "151606",
+        "title": "Diving into State Management"
+    } ],
+    "fullName": "Todd Snyder",
+    "categoryItems": [],
+    "questionAnswers": []
+} ]
