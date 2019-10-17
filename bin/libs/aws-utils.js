@@ -3,8 +3,8 @@ const AWS = require( "aws-sdk" ),
     utils = require( "./utils" ),
     utf8 = "utf-8",
     region = "us-east-1",
-    accessKeyId = "AKIAIS2AH2FRYCNUL4RQ",
-    secretAccessKey = "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";
+    accessKeyId = "",
+    secretAccessKey = "";
 
 exports.sendSMS = data => {
 
