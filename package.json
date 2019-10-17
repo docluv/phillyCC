@@ -10,13 +10,14 @@
     "author": "Chris Love",
     "private": true,
     "devDependencies": {
-        "http-server": "*",
-        "mustache": "*",
         "del": "~3.0.0",
         "generate-schema": "*",
         "glob": "^7.1.4",
-        "ping_bing": "*",
+        "lodash": "*",
+        "mustache": "^3.1.0",
         "ncp": "*",
-        "strip-bom": "*"
+        "ping_bing": "*",
+        "strip-bom": "*",
+        "mkdirp": "*"
     }
 }

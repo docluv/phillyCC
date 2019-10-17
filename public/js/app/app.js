@@ -1,325 +1,132 @@
 ( function () {
 
-    "use strict"; //https://love2dev.com/blog/javascript-strict-mode/
+    "use strict";
 
-    //initialize campSchedule as an array so the search will work in case it is empty ;)
-    var filteredSessions = [],
-        sessionCardTemplate = "";
+    var self = pubcon.component,
+        UPDATE_DATA = "update-data",
+        //initialize Schedule as an array so the search will work in case it is empty ;)
+        filteredSessions = [],
+        sessionCardTemplate = "",
+        sessions = [];
 
-    function initializeApp() {
+    function initialize() {
 
-        initFacetedSearch();
+        //        initSearch();
 
-        initSearch();
+        initAppBar();
 
-        ccSessions.getSessions()
-            .then( function () {
+        if ( "serviceWorker" in navigator ) {
 
-                return loadSessionCardTemplate();
+            var registration;
 
-            } )
-            .then( function () {
+            navigator.serviceWorker.getRegistration( "/" )
+                .then( function ( sw_reg ) {
 
-                initMenuToggle();
+                    registration = sw_reg;
 
-                if ( location.pathname === "/" ) {
+                    if ( ( !registration || !registration.active ) ||
+                        registration.active.scriptURL.indexOf( "app/" ) === -1 ) {
 
-                    loadSessions();
+                        navigator.serviceWorker
+                            .register( "sw.js" )
+                            .then( function ( sw_reg ) { // Registration was successful
 
-                } else {
+                                registration = sw_reg;
 
-                    initSessionDetails();
+                                console.log( "ServiceWorker registration successful with scope: ", registration.scope );
+                            } ).catch( function ( err ) { // registration failed :(
+
+                                console.log( "ServiceWorker registration failed: ", err );
+                            } );
+
+                    }
+
+                } );
+
+            navigator.serviceWorker.onmessage = function ( evt ) {
+
+                var message = JSON.parse( evt.data ),
+                    isRefresh = message.type === "refresh",
+                    isAsset = message.url.includes( "asset" ),
+                    lastETag = localStorage.currentETag,
+                    isNew = lastETag !== message.eTag;
+
+                if ( isRefresh && isAsset && isNew ) {
+
+                    if ( lastETag ) {
+
+                        notice.hidden = false;
+
+                    }
+
+                    //this needs to be idb
+                    localStorage.currentETag = message.eTag;
 
                 }
 
-            } );
-
-    }
-
-    // Menu toggle
-    function initMenuToggle() {
-
-        var toggler = _d.qs( ".navbar-toggler" );
-
-        toggler.addEventListener( "click", function ( evt ) {
-
-            toggleMenu();
-
-        } );
-
-    }
-
-    function toggleMenu() {
-        /* Choose 992 because that is the break point where BS hides the menu toggle button */
-        if ( document.body.clientWidth < 992 ) {
-
-            document.body.classList.toggle( "menu-toggle" );
+            };
 
         }
 
-    }
+        pubcon.sw_message.sendMessage( {
+            event: UPDATE_DATA
+        } );
 
-    function initMySessions() {
-
-        var btnMySessions = _d.qs( ".btn-my-session" );
-
-        btnMySessions.addEventListener( "click", function () {
-
-            ccSessions.getSavedSessions()
-                .then( renderSearchResults );
-
+        addToHomescreen( {
+            appID: "com.love2dev.pubcon",
+            appName: "Pubcon.love2dev",
+            lifespan: 15,
+            autostart: false,
+            skipFirstVisit: false,
+            minSessions: 0,
+            displayPace: 0,
+            customCriteria: true,
+            customPrompt: {
+                title: "Install PubCon?",
+                cancelMsg: "Cancel",
+                installMsg: "Install"
+            }
         } );
 
     }
 
-    function renderFullSchedule() {
+    function initAppBar() {
 
-        ccSessions.getFacetedSessions()
-            .then( renderSearchResults );
+        if ( self.qs( ".appbar-bottom" ) ) {
 
-    }
-
-    function loadSessions() {
-
-        //attempt to load the user's schedule first, then the 'full' schedule
-        ccSessions.getSavedSessions()
-            .then( function ( savedSessions ) {
-
-                if ( savedSessions ) {
-
-                    renderSearchResults( savedSessions );
-
-                } else {
-
-                    renderFullSchedule();
-
-                }
-
-            } );
-
-    }
-
-    /* Session Details */
-
-    function initSessionDetails() {
-
-        var addToScheduleCB = _d.qs( ".session-actions label" ),
-            id = parseInt( addToScheduleCB.getAttribute( "value" ), 10 );
-
-        if ( addToScheduleCB ) {
-
-            addToScheduleCB.addEventListener( "click", function ( e ) {
+            self.on( ".appbar-bottom li", "click", function ( e ) {
 
                 e.preventDefault();
 
-                toggleSessiontoSchedule( e.target );
+                var target = e.currentTarget.getAttribute( "appbar-target" );
 
+                location.href = target;
+
+                return false;
             } );
 
         }
 
-        ccSessions.getSavedSessions()
-            .then( function ( sessions ) {
-
-                sessions = sessions.filter( function ( session ) {
-
-                    return session.id === id;
-
-                } );
-
-                if ( sessions && sessions.length > 0 ) {
-
-                    var cb = _d.qs( "[name='cb" + id + "']" );
-                    cb.checked = true;
-                }
-
-            } );
-
-        bindMySessions();
-
     }
 
-    function toggleSessiontoSchedule( target ) {
-
-        var cbFor = target.getAttribute( "for" ),
-            value = target.getAttribute( "value" ),
-            cb = _d.qs( "[name='" + cbFor + "']" );
-
-        if ( cb ) {
-
-            if ( cb.checked ) {
-
-                cb.checked = false;
-                //push to session time filter
-                ccSessions.removeSession( value );
-
-            } else {
-
-                cb.checked = true;
-                //pop from session time filter
-                ccSessions.saveSession( value );
-
-            }
-
-        }
-
+    function toggleOfflineState( state ) {
+        console.log( "offline state: ", state );
     }
 
-    function bindMySessions() {
+    window.addEventListener( "online", updateOnlineStatus );
+    window.addEventListener( "offline", updateOnlineStatus );
 
-        var mySessionsBtn = _d.qs( ".btn-my-sessions" );
+    function updateOnlineStatus( evt ) {
 
-        mySessionsBtn.addEventListener( "click", function ( e ) {
-
-            e.preventDefault();
-
-            renderMySessions();
-
-            return false;
-
+        pubcon.sw_message.sendMessage( {
+            event: OFFLINE_MSG_KEY,
+            state: navigator.onLine
         } );
 
-    }
-
-    function renderMySessions() {
-
-        return ccSessions.getSavedSessions()
-            .then( renderSearchResults );
+        toggleOfflineState( navigator.onLine );
 
     }
 
-    /*faceted search */
-
-    function initFacetedSearch() {
-
-        var csBigChecks = _d.qsa( ".navigation-panel .big-check" );
-
-        for ( var index = 0; index < csBigChecks.length; index++ ) {
-
-            initFacetedFilter( csBigChecks[ index ] );
-
-        }
-
-        ccSessions.getSelectedTimes()
-            .then( function ( times ) {
-
-                times.forEach( function ( sessionTime ) {
-
-                    var sessionCB = _d.qs( "[name=cb" + sessionTime.replace( ":", "" ) + "]" );
-
-                    sessionCB.checked = true;
-
-                } );
-
-            } );
-
-    }
-
-    function initFacetedFilter( cbLabel ) {
-
-        cbLabel.addEventListener( "click", function ( e ) {
-
-            e.preventDefault();
-
-            var cbFor = e.target.getAttribute( "for" ),
-                value = e.target.getAttribute( "value" ),
-                cb = _d.qs( "[name='" + cbFor + "']" );
-
-            if ( cb ) {
-
-                if ( cb.checked ) {
-
-                    cb.checked = false;
-                    //push to session time filter
-                    ccSessions.removeSessionTime( value )
-                        .then( renderFullSchedule );
-
-                } else {
-
-                    cb.checked = true;
-                    //pop from session time filter
-                    ccSessions.addSessionTime( value )
-                        .then( renderFullSchedule );
-
-                }
-
-            }
-
-        } );
-
-    }
-
-    /* search */
-    function initSearch() {
-
-        var searchBox = _d.qs( ".search-query" );
-
-        searchBox.addEventListener( "keyup", function ( evt ) {
-
-            evt.preventDefault();
-
-            if ( searchBox.value.length > 3 || evt.keyCode === 13 ) {
-
-                ccSessions.searchSessions( searchBox.value )
-                    .then( renderSearchResults );
-            }
-
-            return false;
-
-        } );
-
-    }
-
-    function renderSearchResults( results ) {
-
-        var target = _d.qs( ".page-content" );
-
-        target.innerHTML = Mustache.render( sessionCardTemplate, {
-            sessions: results
-        } );
-
-    }
-
-    /* session card template */
-
-    function loadSessionCardTemplate() {
-
-        return fetch( "templates/session-list-item.html" )
-            .then( function ( response ) {
-
-                if ( response.ok ) {
-
-                    return response.text()
-                        .then( function ( template ) {
-
-                            sessionCardTemplate = template;
-
-                            return;
-                        } );
-
-                }
-
-                return;
-
-            } );
-
-    }
-
-    initializeApp();
-
-    if ( 'serviceWorker' in navigator ) {
-
-        navigator.serviceWorker.register( '/sw.js' ).then( function ( registration ) {
-            // Registration was successful
-
-            console.log( 'ServiceWorker registration successful with scope: ', registration.scope );
-
-        } ).catch( function ( err ) {
-            // registration failed :(
-
-            console.log( 'ServiceWorker registration failed: ', err );
-        } );
-
-    }
+    initialize();
 
 } )();

@@ -1,0 +1,8 @@
+
+.fa-search:before { content: '\e800'; } /* '' */
+.fa-users:before { content: '\e801'; } /* '' */
+.fa-star-empty:before { content: '\e804'; } /* '' */
+.fa-star:before { content: '\e805'; } /* '' */
+.fa-calendar:before { content: '\e811'; } /* '' */
+.fa-home:before { content: '\e81a'; } /* '' */
+.fa-info-circled:before { content: '\e81e'; } /* '' */

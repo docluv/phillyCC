@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+
+    <title>Philly Code Camp 2019.2 Progressive Web App</title>
+    <meta name="description" content="Find and track all your sessions online and off!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/mdc.snackbar.min.css" rel="stylesheet">
+    <link href="css/addtohomescreen.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Pubcon.love2dev">
+    <meta name="apple-mobile-web-app-title" content="Pubcon.love2dev">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="apple-touch-icon" href="meta/ios/ios-appicon-120-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="meta/ios/ios-appicon-152-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="meta/ios/ios-appicon-180-180.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="meta/ios/ios-appicon-120-120.png">
+    <link href="meta/ios/apple-touch-startup-image-320x460.png" media="(device-width: 320px)"
+        rel="apple-touch-startup-image">
+    <!-- iPhone (Retina) SPLASHSCREEN-->
+    <link href="meta/ios/apple-touch-startup-image-640x920.png"
+        media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <!-- iPad (portrait) SPLASHSCREEN-->
+    <link href="meta/ios/apple-touch-startup-image-768x1004.png"
+        media="(device-width: 768px) and (orientation: portrait)" rel="apple-touch-startup-image">
+    <!-- iPad (landscape) SPLASHSCREEN-->
+    <link href="meta/ios/apple-touch-startup-image-748x1024.png"
+        media="(device-width: 768px) and (orientation: landscape)" rel="apple-touch-startup-image">
+    <!-- iPad (Retina, portrait) SPLASHSCREEN-->
+    <link href="meta/ios/apple-touch-startup-image-1536x2008.png"
+        media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image">
+    <!-- iPad (Retina, landscape) SPLASHSCREEN-->
+    <link href="meta/ios/apple-touch-startup-image-2048x1496.png"
+        media="(device-width: 1536px)  and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image">
+    <!-- iPhone 6/7/8 -->
+    <link href="/meta/ios/apple-touch-startup-image-750x1334.png"
+        media="(device-width: 375px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <!-- iPhone 6 Plus/7 Plus/8 Plus -->
+    <link href="/meta/ios/apple-touch-startup-image-1242x2208.png"
+        media="(device-width: 414px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+
+    <meta name="msapplication-starturl" content="/?utm_source=homescreen">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="favicon.ico" rel="shortcut icon">
+    <link rel="icon" type="image/png" href="meta/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="meta/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="meta/favicon-96x96.png" sizes="96x96">
+
+    <meta name="theme-color" content="#b01616">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="generator" content="PWA Starter https://pwastarter.love2dev.com/">
+
+    <!-- social networking -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Philly Code Camp Schedule">
+    <meta property="og:description" content="Find the Sessions You Want at the 2019 Philly Code Camp">
+    <meta property="og:url" content="Sat, 17 Mar 2019 20:28:34 GMT">
+    <meta property="og:site_name" content="Philly Code Camp 2019">
+    <meta property="article:publisher" content="https://www.facebook.com/phillycodecamp/">
+    <meta property="article:section" content="main">
+    <meta property="article:published_time" content="Sat, 17 Mar 2019 20:28:34 GMT">
+    <meta property="article:modified_time" content="Sat, 17 Mar 2019 20:28:34 GMT">
+    <meta property="og:updated_time" content="Sat, 17 Mar 2019 20:28:34 GMT">
+    <meta property="og:image" content="meta/Square310x310Logo.scale-100.png">
+    <meta property="og:image:width" content="310">
+    <meta property="og:image:height" content="310">
+    <meta property="twitter:account_id" content="5658652" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="Find the Sessions You Want at the 2019 Philly Code Camp">
+    <meta name="twitter:title" content="Philly Code Camp Schedule">
+    <meta name="twitter:site" content="@phillycodecamp">
+    <meta name="twitter:image" content="meta/windows10/Square310x310Logo.scale-100.png">
+    <meta name="twitter:creator" content="@ChrisLove">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
+        <a class="navbar-brand" href="/">
+            <img srcset="img/pubcon-logo-1200x334.png, img/pubcon-logo-992x276.png 992w,img/pubcon-logo-768x214.png 768w,img/pubcon-logo-576x160.png 576w,img/pubcon-logo-460x128.png 460w,img/pubcon-logo-320x89.png 320w"
+                src="img/pubcon-logo-1200x334.png" sizes="(max-width: 736px) 60vw, 360px" alt="PubCon">
+        </a>
+
+        <div class="ml-5 pl-3 d-none d-lg-block" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="speakers/">Speakers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="favorites/">Favorites</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about/">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <div class="m-5 col-12 col-lg-6" id="fe60954c-9d1a-4167-9faa-77027c8d446b">
+    <div class="card-body">
+        <h1 class="card-title">Kendall Miller</h1>
+        <h3 class="card-title">Gibraltar Software</h3>
+        <p class="card-text">Kendall Miller is the CEO of Gibraltar Software, the developers of Loupe, VistaDB and Visual ReCode for .NET and Java developers.  As a software engineer now running an international company, Kendall focuses on system scalability, usability and user experience.
+
+Before starting Gibraltar Software, Kendall worked for multiple startups leading their technology development from beginning through profitability. In each case he&#39;s focused on translating enterprise-level performance and capabilities down to smaller companies. 
+
+Kendall has a B.S in Computer Engineering from the University of Illinois, Urbana-Champaign.</p>
+        <div class="card-list my-1 p-1 border-top">
+            <h3>Sessions</h3>
+            <div class="session-box">
+                <h3 class="card-title-2">How not to be the best app no one uses: Effective Onboarding for fun &amp; profit</h3>
+                <p class="card-text"><a href="session/148866/" class="card-link btn btn-primary float-right">Details</a>
+                </p>
+            </div>
+            <div class="session-box">
+                <h3 class="card-title-2">Real World UX Problem Solving</h3>
+                <p class="card-text"><a href="session/148867/" class="card-link btn btn-primary float-right">Details</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    </div>
+
+    <nav class="appbar appbar-bottom bg-white">
+        <ul>
+            <li appbar-target="/" class="nav-btn-home">
+                <span class="appbar-icon" title="Mehab Home">
+                    <i class="fas fa-home fa-2x"></i>
+                </span>
+                <span class="appbar-btn-text">Home</span>
+            </li>
+            <li appbar-target="speakers/" class="nav-btn-speakers">
+                <span class="appbar-icon" title="Speakers">
+                    <i class="fas fa-users fa-2x"></i></span>
+                <span class="appbar-btn-text">Speakers</span>
+            </li>
+            <li appbar-target="favorites/" class="nav-btn-favorites">
+                <span class="appbar-icon" title="Favorites">
+                    <i class="fas fa-star fa-2x"></i></span>
+                <span class="appbar-btn-text">Favorites</span>
+            </li>
+            <li appbar-target="about/" class="nav-btn-about">
+                <span class="appbar-icon" title="About">
+                    <i class="fas fa-info-circled fa-2x"></i></span>
+                <span class="appbar-btn-text">About</span>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="ath-container banner-bottom-center">
+        <div class="ath-banner">
+            <div class="ath-banner-title">
+                <p>Install PubCon?</p>
+            </div>
+            <div class="ath-banner-cell">
+                <button class="btn btn-cancel btn-link">Not Now</button>
+            </div>
+            <div class="ath-banner-cell">
+                <button class="btn btn-install btn-success">Install</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/libs/addtohomescreen.js" type="application/javascript"></script>
+    <script src="js/libs/localforage.min.js" type="application/javascript"></script>
+    <script src="js/libs/mustache.min.js" type="application/javascript"></script>
+    <script src="js/app/services/utils.js" type="application/javascript"></script>
+    <script src="js/app/services/data.js" type="application/javascript"></script>
+    <script src="js/app/services/sessions.js" type="application/javascript"></script>
+    <script src="js/app/services/speakers.js" type="application/javascript"></script>
+    <script src="js/app/services/favorites.js" type="application/javascript"></script>
+    <script src="js/app/ui/component.base.js" type="application/javascript"></script>
+    <script src="js/app/ui/favorites.js" type="application/javascript"></script>
+    <script src="js/libs/share.js" type="application/javascript"></script>
+    <script src="js/app/services/sw_message.js" type="application/javascript"></script>
+    <script src="js/app/app.js" type="application/javascript"></script>
+    <script src="js/app/controllers/search.js" type="application/javascript"></script>
+
+</body>
+
+</html>
