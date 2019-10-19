@@ -18,6 +18,7 @@
         "ncp": "*",
         "ping_bing": "*",
         "strip-bom": "*",
+        "request": "*",
         "mkdirp": "*"
     }
 }

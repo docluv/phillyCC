@@ -10,10 +10,9 @@
         <p class="session-text">
             <b>{{time}} - {{#room}}{{name}}{{/room}}{{^room}}TBD{{/room}}</b>
         </p>
-    </div>
-    <div class="session-actions">
-        <input type="checkbox" name="cb{{id}}">
-        <label for="cb{{id}}" value="{{id}}" class="big-check">Schedule</label>
+        <div class="favorite btn-favorite" favorite-id="{{id}}">
+            <i class="far fa-star-empty"></i>
+        </div>
     </div>
     <div class="session-description">
         {{{description}}}</div>

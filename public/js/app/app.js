@@ -82,7 +82,7 @@
             displayPace: 0,
             customCriteria: true,
             customPrompt: {
-                title: "Install PubCon?",
+                title: "Install Code Camp?",
                 cancelMsg: "Cancel",
                 installMsg: "Install"
             }

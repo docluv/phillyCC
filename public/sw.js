@@ -1,12 +1,10 @@
 importScripts( "js/libs/localforage.min.js",
     "js/libs/mustache.min.js" );
 
-const version = "0.02",
+const version = "0.05",
     preCache = "PRECACHE-" + version,
     cacheList = [ "/",
         "speakers/",
-        "sessions/",
-        "profile/",
         "about/",
         //        "img/phillycodecamp-logo-1200x334.png", "img/phillycodecamp-logo-992x276.png", "img/phillycodecamp-logo-768x214.png", "img/phillycodecamp-logo-576x160.png", "img/phillycodecamp-logo-460x128.png", "img/phillycodecamp-logo-320x89.png",
         "font/pubcon.woff2?4247060",
@@ -399,6 +397,8 @@ function updatefavorites() {
         } )
         .then( sessions => {
 
+            sessions = sessions || [];
+
             return renderPage( "favorites/", "sessions", {
                 sessions: sessions
             } );
@@ -429,7 +429,7 @@ function getSessionById( id ) {
 
             return sessions.find( session => {
 
-                return session.assetId === id;
+                return session.id === id;
             } );
 
         } );

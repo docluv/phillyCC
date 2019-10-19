@@ -6,12 +6,11 @@
     "display": "fullscreen",
     "start_url": "/",
     "short_name": "Philly CC",
-    "description": "Find the Sessions You Want at the 2018 Philly Code Camp",
+    "description": "Find the Sessions You Want at the 2019.2 Philly Code Camp",
     "orientation": "any",
     "background_color": "#fff",
     "theme_color": "#000066",
-    "icons": [
-        {
+    "icons": [ {
             "src": "meta/windows10/Square71x71Logo.scale-400.png",
             "sizes": "284x284"
         },

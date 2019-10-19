@@ -2,17 +2,17 @@ const AWS = require( "aws-sdk" ),
     zlib = require( "zlib" ),
     utils = require( "./utils" ),
     utf8 = "utf-8",
-    region = "us-east-1",
-    accessKeyId = "",
-    secretAccessKey = "";
+    region = "us-east-1";
+
+let keys = utils.readJSON( "aws-keys.json" );
 
 exports.sendSMS = data => {
 
     return new Promise( function ( resolve, reject ) {
 
         let sns = new AWS.SNS( {
-            accessKeyId: accessKeyId,
-            secretAccessKey: secretAccessKey,
+            accessKeyId: keys.accessKey,
+            secretAccessKey: keys.secretKey,
             "region": process.env.REGION || region
         } );
 

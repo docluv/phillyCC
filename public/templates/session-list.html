@@ -10,6 +10,9 @@
         {{/speakers}}
         <p class="card-text">{{time}} - {{#room}}{{name}}{{/room}}{{^room}}TBD{{/room}}</p>
         <a href="session/{{id}}/" class="card-link btn btn-primary float-right">Details</a>
+        <div class="favorite btn-favorite" favorite-id="{{id}}">
+            <i class="far fa-star-empty"></i>
+        </div>
     </div>
 </div>
 {{/sessions}}
